@@ -28,7 +28,25 @@ namespace app::player {
             SPRING_JUMP = 0x21,
             SPIN_DASH = 0x22,
         };
-
+        enum class CombatFlag : unsigned int 
+        {
+            JUMP = 0x0,
+            DOUBLE_JUMP = 0x1, // turning off this enables jumpdash
+            BOOST = 0x2,
+            AIR_BOOST = 0x3,
+            unk_4 = 0x4,
+            unk_8 = 0x8,
+            unk_10 = 0x10,
+            STOMP = 0xE,
+            unk_1B = 0x1B,
+            unk_1C = 0x1C,
+            unk_1E = 0x1E,
+            D_BLOW = 0x32,   
+            D_SURF = 0x33,
+            D_AMOEBA = 0x34,
+            D_WINGS = 0x35,
+            unk_36 = 0x36,
+        }; 
         enum class WorldFlag : unsigned int
         {
             KILLED = 0x01,
@@ -45,7 +63,6 @@ namespace app::player {
             NITRO_BOOST = 0x43,
             MAX_SPEED_CHALLENGE = 0x44,
         };
-
         enum class Difficulty : uint8_t
         {
             EASY = 0x00,
@@ -86,6 +103,7 @@ namespace app::player {
 
         virtual unsigned int GetNameHash() const override;
 
+        void SetCombatFlag(CombatFlag combatFlag, bool enabled);
         void SetStateFlag(StateFlag stateFlag, bool enabled);
         void SetWorldFlag(WorldFlag worldFlag, bool enabled);
         bool GetStateFlag(StateFlag stateFlag);

@@ -108855,6 +108855,11 @@ PUBLIC ??_DBlackboardStatus@player@app@@QEAAXXZ
     mov rax, 014993b890h
     jmp rax
 
+PUBLIC ?SetCombatFlag@BlackboardStatus@player@app@@QEAAXW4CombatFlag@123@_N@Z
+?SetCombatFlag@BlackboardStatus@player@app@@QEAAXW4CombatFlag@123@_N@Z:
+    mov rax, 0149980E30h
+    jmp rax
+
 PUBLIC ??_DParameter@StateFall@player@app@@QEAAXXZ
 ??_DParameter@StateFall@player@app@@QEAAXXZ:
     mov rax, 014998f350h

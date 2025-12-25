@@ -12431,6 +12431,7 @@
 14060cee0,??_D?$PriorityList@_NV?$Handle@VMessenger@fnd@hh@@V?$HandleManager@VMessenger@fnd@hh@@@23@@fnd@hh@@@ut@app@@QEAAXXZ,1
 14060cf60,j_??_DBlackboardStatus@player@app@@QEAAXXZ,1
 14060d310,?GetNameHash@BlackboardStatus@player@app@@UEBAIXZ,1
+14060D6A0,?SetStateFlag@BlackboardStatus@player@app@@QEAAXW4StateFlag@123@_N@Z,1
 14060d760,?GetStateFlag@BlackboardStatus@player@app@@QEAA_NW4StateFlag@123@@Z,1
 14060d7a0,?GetWorldFlag@BlackboardStatus@player@app@@QEAA_NW4WorldFlag@123@@Z,1
 14060d7b0,??_DParameter@StateBoarding@player@app@@QEAAXXZ,0
@@ -18756,6 +18757,7 @@
 140cfcea0,??_GLoadedNormalizer2Impl@icu_72@@QEAAXXZ,0
 140cfcf10,??0LoadedNormalizer2Impl@icu_72@@QEAA@PEAVIAllocator@fnd@csl@@@Z,0
 140cfd550,??_DNormalizer2Impl@icu_72@@QEAAXXZ,0
+140d44E50,j_?MonitorAxisMapping@InputComponent@game@hh@@QEAAXPEBDH@Z,1
 140dca430,?SetParameter@?$ArrayParameterContainer@Ufloat_vector4@needle@hh@@@MaterialObject@MaterialObjectContainer@needle@hh@@QEAAXPEAVCNameIDObject@45@PEBUfloat_vector4@45@I@Z,1
 140df75b0,??0EffectHandle@eff@hh@@QEAA@XZ,1
 140e282b0,j_?CreateGlobalParamListeners@SceneParamContainer@needle@hh@@QEAAXXZ,1
@@ -59063,6 +59065,7 @@
 1501faf30,?Initialize@GOCPhysicalAnimationBullet@pba@hh@@UEAAXPEAVGOCAnimator@anim@3@@Z,1
 15020a740,?UnkFunc21@GOCPhysicalAnimationBullet@pba@hh@@UEAAXD@Z,1
 150216730,?LoadConstraintIntoBulletConstraint@GOCPhysicalAnimationBullet@pba@hh@@CAXPEAVbtGeneric6DofSpring2Constraint@@PEAUConstraint@23@@Z,1
+15021c4f0,?MonitorAxisMapping@InputComponent@game@hh@@QEAAXPEBDH@Z,1
 150221f30,??0PhysicalSkeletonBinding@pba@hh@@QEAA@PEAVIAllocator@fnd@csl@@_J1@Z,1
 150236270,??_DPhysicalSkeletonBinding@pba@hh@@QEAAXXZ,1
 15024ce80,?Create@PbaManagerBullet@pba@hh@@CAPEAVGameService@game@3@PEAVIAllocator@fnd@csl@@@Z,1

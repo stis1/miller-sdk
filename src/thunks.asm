@@ -41785,6 +41785,11 @@ PUBLIC ?GetNameHash@BlackboardStatus@player@app@@UEBAIXZ
     mov rax, 014060d310h
     jmp rax
 
+PUBLIC ?SetStateFlag@BlackboardStatus@player@app@@QEAAXW4StateFlag@123@_N@Z
+?SetStateFlag@BlackboardStatus@player@app@@QEAAXW4StateFlag@123@_N@Z:
+    mov rax, 014060D6A0h
+    jmp rax
+
 PUBLIC ?GetStateFlag@BlackboardStatus@player@app@@QEAA_NW4StateFlag@123@@Z
 ?GetStateFlag@BlackboardStatus@player@app@@QEAA_NW4StateFlag@123@@Z:
     mov rax, 014060d760h
@@ -114998,6 +115003,11 @@ PUBLIC ?UnkFunc21@GOCPhysicalAnimationBullet@pba@hh@@UEAAXD@Z
 PUBLIC ?LoadConstraintIntoBulletConstraint@GOCPhysicalAnimationBullet@pba@hh@@CAXPEAVbtGeneric6DofSpring2Constraint@@PEAUConstraint@23@@Z
 ?LoadConstraintIntoBulletConstraint@GOCPhysicalAnimationBullet@pba@hh@@CAXPEAVbtGeneric6DofSpring2Constraint@@PEAUConstraint@23@@Z:
     mov rax, 0150216730h
+    jmp rax
+
+PUBLIC ?MonitorAxisMapping@InputComponent@game@hh@@QEAAXPEBDH@Z
+?MonitorAxisMapping@InputComponent@game@hh@@QEAAXPEBDH@Z:
+    mov rax, 015021c4f0h
     jmp rax
 
 PUBLIC ??0PhysicalSkeletonBinding@pba@hh@@QEAA@PEAVIAllocator@fnd@csl@@_J1@Z

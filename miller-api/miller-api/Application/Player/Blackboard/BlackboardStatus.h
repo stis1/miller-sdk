@@ -31,21 +31,18 @@ namespace app::player {
         enum class CombatFlag : unsigned int 
         {
             JUMP = 0x0,
-            DOUBLE_JUMP = 0x1, // turning off this enables jumpdash
+            DOUBLE_JUMP = 0x1, // turning off this makes Shadow do jumpdash
             BOOST = 0x2,
             AIR_BOOST = 0x3,
-            unk_4 = 0x4,
-            unk_8 = 0x8,
-            unk_10 = 0x10,
+            HOMING_ATTACK = 0x4,
+            SIDE_STEP = 0x5, 
             STOMP = 0xE,
-            unk_1B = 0x1B,
-            unk_1C = 0x1C,
-            unk_1E = 0x1E,
+            BOARDING = 0x1B, 
+            CAMERA_MOVEMENT = 0x20, 
             D_BLOW = 0x32,   
             D_SURF = 0x33,
             D_AMOEBA = 0x34,
-            D_WINGS = 0x35,
-            unk_36 = 0x36,
+            D_WINGS = 0x35
         }; 
         enum class WorldFlag : unsigned int
         {

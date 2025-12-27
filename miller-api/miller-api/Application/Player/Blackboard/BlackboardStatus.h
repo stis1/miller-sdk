@@ -30,15 +30,15 @@ namespace app::player {
         };
         enum class CombatFlag : unsigned int
         {
-            JUMP = 0x0,
-            DOUBLE_JUMP = 0x1,  // turning off this makes Shadow do jumpdash
-            BOOST = 0x2,
-            AIR_BOOST = 0x3,
-            HOMING_ATTACK = 0x4,
-            SIDE_STEP = 0x5,
-            SLALOM_STEP = 0x6,
-            CROUCH = 0xD,
-            STOMP = 0xE,
+            JUMP = 0x00,
+            DOUBLE_JUMP = 0x01,  // turning off this makes Shadow do jumpdash
+            BOOST = 0x02,
+            AIR_BOOST = 0x03,
+            HOMING_ATTACK = 0x04,
+            SIDE_STEP = 0x05,
+            SLALOM_STEP = 0x06,
+            CROUCH = 0x0D,
+            STOMP = 0x0E,
             SLIDE = 0x10,
             BOARDING = 0x1B,
             CAMERA_MOVEMENT = 0x20,

@@ -28,22 +28,32 @@ namespace app::player {
             SPRING_JUMP = 0x21,
             SPIN_DASH = 0x22,
         };
-        enum class CombatFlag : unsigned int 
+        enum class CombatFlag : unsigned int
         {
             JUMP = 0x0,
-            DOUBLE_JUMP = 0x1, // turning off this makes Shadow do jumpdash
+            DOUBLE_JUMP = 0x1,  // turning off this makes Shadow do jumpdash
             BOOST = 0x2,
             AIR_BOOST = 0x3,
             HOMING_ATTACK = 0x4,
-            SIDE_STEP = 0x5, 
+            SIDE_STEP = 0x5,
+            SLALOM_STEP = 0x6,
+            CROUCH = 0xD,
             STOMP = 0xE,
-            BOARDING = 0x1B, 
-            CAMERA_MOVEMENT = 0x20, 
-            D_BLOW = 0x32,   
+            SLIDE = 0x10,
+            BOARDING = 0x1B,
+            CAMERA_MOVEMENT = 0x20,
+            MOVEMENT = 0x21,
+            RAIL_GRINDING = 0x2A,
+            CYBER_CORRUPTION_CHAOS = 0x30,
+            CYBER_CORRUPTOIN_RHEA = 0x31,
+            D_BLOW = 0x32,
             D_SURF = 0x33,
             D_AMOEBA = 0x34,
-            D_WINGS = 0x35
-        }; 
+            D_WINGS = 0x35,
+            JUMP2 = 0x40 // why is this jump too?
+        };
+
+
         enum class WorldFlag : unsigned int
         {
             KILLED = 0x01,

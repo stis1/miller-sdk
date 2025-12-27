@@ -41787,7 +41787,7 @@ PUBLIC ?GetNameHash@BlackboardStatus@player@app@@UEBAIXZ
 
 PUBLIC ?SetStateFlag@BlackboardStatus@player@app@@QEAAXW4StateFlag@123@_N@Z
 ?SetStateFlag@BlackboardStatus@player@app@@QEAAXW4StateFlag@123@_N@Z:
-    mov rax, 014060D6A0h
+    mov rax, 014060d6a0h
     jmp rax
 
 PUBLIC ?GetStateFlag@BlackboardStatus@player@app@@QEAA_NW4StateFlag@123@@Z
@@ -108857,7 +108857,7 @@ PUBLIC ??_DBlackboardStatus@player@app@@QEAAXXZ
 
 PUBLIC ?SetCombatFlag@BlackboardStatus@player@app@@QEAAXW4CombatFlag@123@_N@Z
 ?SetCombatFlag@BlackboardStatus@player@app@@QEAAXW4CombatFlag@123@_N@Z:
-    mov rax, 0149980E30h
+    mov rax, 0149980e30h
     jmp rax
 
 PUBLIC ??_DParameter@StateFall@player@app@@QEAAXXZ

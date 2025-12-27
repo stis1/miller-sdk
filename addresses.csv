@@ -12431,8 +12431,8 @@
 14060cee0,??_D?$PriorityList@_NV?$Handle@VMessenger@fnd@hh@@V?$HandleManager@VMessenger@fnd@hh@@@23@@fnd@hh@@@ut@app@@QEAAXXZ,1
 14060cf60,j_??_DBlackboardStatus@player@app@@QEAAXXZ,1
 14060d310,?GetNameHash@BlackboardStatus@player@app@@UEBAIXZ,1
-14060D6A0,?SetStateFlag@BlackboardStatus@player@app@@QEAAXW4StateFlag@123@_N@Z,1
-14060D680,j_?SetCombatFlag@BlackboardStatus@player@app@@QEAAXW4CombatFlag@123@_N@Z,1
+14060d6A0,?SetStateFlag@BlackboardStatus@player@app@@QEAAXW4StateFlag@123@_N@Z,1
+14060d680,j_?SetCombatFlag@BlackboardStatus@player@app@@QEAAXW4CombatFlag@123@_N@Z,1
 14060d760,?GetStateFlag@BlackboardStatus@player@app@@QEAA_NW4StateFlag@123@@Z,1
 14060d7a0,?GetWorldFlag@BlackboardStatus@player@app@@QEAA_NW4WorldFlag@123@@Z,1
 14060d7b0,??_DParameter@StateBoarding@player@app@@QEAAXXZ,0

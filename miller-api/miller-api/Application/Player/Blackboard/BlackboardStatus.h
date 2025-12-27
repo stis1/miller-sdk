@@ -40,17 +40,17 @@ namespace app::player {
             CROUCH = 0x0D,
             STOMP = 0x0E,
             SLIDE = 0x10,
-            BOARDING = 0x1B,
+            BOARDING = 0x1B, // Frontiers skateboarding
             CAMERA_MOVEMENT = 0x20,
             MOVEMENT = 0x21,
             RAIL_GRINDING = 0x2A,
-            CYBER_CORRUPTION_CHAOS = 0x30,
-            CYBER_CORRUPTOIN_RHEA = 0x31,
+            CYBER_CORRUPTION_CHAOS = 0x30, // Frontiers leftover
+            CYBER_CORRUPTOIN_RHEA = 0x31, // Frontiers leftover
             D_BLOW = 0x32,
             D_SURF = 0x33,
             D_AMOEBA = 0x34,
             D_WINGS = 0x35,
-            JUMP2 = 0x40 // why is this jump too?
+            JUMP2 = 0x40 // Also a jump for some reason
         };
 
 

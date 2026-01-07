@@ -7464,8 +7464,6 @@
 140149fd0,?Create@GOCHealth@game@app@@CAPEAV123@PEAVIAllocator@fnd@csl@@@Z,0
 14014a8f0,?AddListener@TimeService@game@app@@QEAAXPEAVTimeServiceListener@23@@Z,1
 14014ad70,?GetClass@GOCHealth@game@app@@SAPEBVGOComponentClass@2hh@@XZ,0
-14adc2990,?AddCallback@StatePluginCollision@player@app@@UEAAXXZ,1
-14ade57b0,?SetTypeAndRadius@StatePluginCollision@player@app@@QEAAXEM@Z,1
 14014afc0,??0HealthInspector@game@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z,0
 14014ba30,??_GGOCHitStop@game@app@@QEAAXXZ,0
 14014c140,?Create@GOCHitStop@game@app@@CAPEAV123@PEAVIAllocator@fnd@csl@@@Z,0
@@ -58171,6 +58169,8 @@
 14abb85e0,??_GStatePluginOutOfControl@player@app@@QEAAXXZ,0
 14abef500,??0StatePluginRecovery@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z,0
 14ac13fa0,??_GStatePluginRecovery@player@app@@QEAAXXZ,0
+14adc2990,?AddCallback@StatePluginCollision@player@app@@UEAAXXZ,1
+14ade57b0,?SetTypeAndRadius@StatePluginCollision@player@app@@QEAAXEM@Z,1
 14b075380,??0VisualHuman@player@app@@QEAA@PEAVIAllocator@fnd@csl@@PEAVGameObject@game@hh@@PEAUComponentCollection@12@@Z,1
 14b0822b0,?UnkFunc8@VisualHuman@player@app@@UEAA_KXZ,1
 14b0822b0,?OnEnd@VisualHuman@player@app@@UEAAXXZ,1

@@ -19875,16 +19875,6 @@ PUBLIC ?GetClass@GOCHealth@game@app@@SAPEBVGOComponentClass@2hh@@XZ
     mov rax, 014014ad70h
     jmp rax
 
-PUBLIC ?AddCallback@StatePluginCollision@player@app@@UEAAXXZ
-?AddCallback@StatePluginCollision@player@app@@UEAAXXZ:
-    mov rax, 014adc2990h
-    jmp rax
-
-PUBLIC ?SetTypeAndRadius@StatePluginCollision@player@app@@QEAAXEM@Z
-?SetTypeAndRadius@StatePluginCollision@player@app@@QEAAXEM@Z:
-    mov rax, 014ade57b0h
-    jmp rax
-
 PUBLIC ??0HealthInspector@game@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z
 ??0HealthInspector@game@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z:
     mov rax, 014014afc0h
@@ -110493,6 +110483,16 @@ PUBLIC ??0StatePluginRecovery@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z
 PUBLIC ??_GStatePluginRecovery@player@app@@QEAAXXZ
 ??_GStatePluginRecovery@player@app@@QEAAXXZ:
     mov rax, 014ac13fa0h
+    jmp rax
+
+PUBLIC ?AddCallback@StatePluginCollision@player@app@@UEAAXXZ
+?AddCallback@StatePluginCollision@player@app@@UEAAXXZ:
+    mov rax, 014adc2990h
+    jmp rax
+
+PUBLIC ?SetTypeAndRadius@StatePluginCollision@player@app@@QEAAXEM@Z
+?SetTypeAndRadius@StatePluginCollision@player@app@@QEAAXEM@Z:
+    mov rax, 014ade57b0h
     jmp rax
 
 PUBLIC ??0VisualHuman@player@app@@QEAA@PEAVIAllocator@fnd@csl@@PEAVGameObject@game@hh@@PEAUComponentCollection@12@@Z

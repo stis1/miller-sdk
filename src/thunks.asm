@@ -15240,6 +15240,11 @@ PUBLIC ?Create@KeybindMonitorImGui@dbg@app@@CAPEAV123@PEAVIAllocator@fnd@csl@@@Z
     mov rax, 01400e8010h
     jmp rax
 
+PUBLIC ?GetPlugin@?$StatePluginManager@VPlayerHsmContext@player@app@@@player@app@@QEAAPEAV?$StatePlugin@VPlayerHsmContext@player@app@@@23@I@Z
+?GetPlugin@?$StatePluginManager@VPlayerHsmContext@player@app@@@player@app@@QEAAPEAV?$StatePlugin@VPlayerHsmContext@player@app@@@23@I@Z:
+    mov rax, 01400e8050h
+    jmp rax
+
 PUBLIC ??_DResShaderList@resources@heur@@QEAAXXZ
 ??_DResShaderList@resources@heur@@QEAAXXZ:
     mov rax, 01400e8540h
@@ -19868,6 +19873,16 @@ PUBLIC ?AddListener@TimeService@game@app@@QEAAXPEAVTimeServiceListener@23@@Z
 PUBLIC ?GetClass@GOCHealth@game@app@@SAPEBVGOComponentClass@2hh@@XZ
 ?GetClass@GOCHealth@game@app@@SAPEBVGOComponentClass@2hh@@XZ:
     mov rax, 014014ad70h
+    jmp rax
+
+PUBLIC ?AddCallback@StatePluginCollision@player@app@@UEAAXXZ
+?AddCallback@StatePluginCollision@player@app@@UEAAXXZ:
+    mov rax, 014adc2990h
+    jmp rax
+
+PUBLIC ?SetTypeAndRadius@StatePluginCollision@player@app@@QEAAXEM@Z
+?SetTypeAndRadius@StatePluginCollision@player@app@@QEAAXEM@Z:
+    mov rax, 014ade57b0h
     jmp rax
 
 PUBLIC ??0HealthInspector@game@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z
@@ -41740,6 +41755,11 @@ PUBLIC ??_GPlayerExternalControlHandle@player@app@@QEAAXXZ
     mov rax, 0140609ff0h
     jmp rax
 
+PUBLIC ?GetContent@Blackboard@player@app@@QEAAPEAVBlackboardContent@23@I@Z
+?GetContent@Blackboard@player@app@@QEAAPEAVBlackboardContent@23@I@Z:
+    mov rax, 014060c240h
+    jmp rax
+
 PUBLIC ?GetNameHash@BlackboardBattle@player@app@@UEBAIXZ
 ?GetNameHash@BlackboardBattle@player@app@@UEBAIXZ:
     mov rax, 014060c510h
@@ -42105,6 +42125,11 @@ PUBLIC ?GetRuntimeTypeInfo@GOCPlayerHsm@player@app@@UEBAPEAXXZ
     mov rax, 014062d5f0h
     jmp rax
 
+PUBLIC ?GetCurrentState@GOCPlayerHsm@player@app@@QEBAHXZ
+?GetCurrentState@GOCPlayerHsm@player@app@@QEBAHXZ:
+    mov rax, 014062d5d0h
+    jmp rax
+
 PUBLIC ?ProcessMessage@GOCPlayerHsm@player@app@@UEAA_NAEAVMessage@fnd@hh@@@Z
 ?ProcessMessage@GOCPlayerHsm@player@app@@UEAA_NAEAVMessage@fnd@hh@@@Z:
     mov rax, 014062d770h
@@ -42133,6 +42158,11 @@ PUBLIC ?UpdateAsync@GOCPlayerHsm@player@app@@UEAAXW4UpdatingPhase@fnd@hh@@AEBUSU
 PUBLIC ??_DPlayerHsmContext@player@app@@QEAAXXZ
 ??_DPlayerHsmContext@player@app@@QEAAXXZ:
     mov rax, 014062e250h
+    jmp rax
+
+PUBLIC ?GetCurrentState@PlayerHsmContext@player@app@@QEBAHXZ
+?GetCurrentState@PlayerHsmContext@player@app@@QEBAHXZ:
+    mov rax, 014062e510h
     jmp rax
 
 PUBLIC ?Create@GOCPlayerInformationUpdater@player@app@@CAPEAV123@PEAVIAllocator@fnd@csl@@@Z
@@ -48888,6 +48918,26 @@ PUBLIC ??_GStatePluginWaterFlow@player@app@@QEAAXXZ
 PUBLIC ??_DMsgUpdateWaterFlow@player@app@@QEAAXXZ
 ??_DMsgUpdateWaterFlow@player@app@@QEAAXXZ:
     mov rax, 01406fc130h
+    jmp rax
+
+PUBLIC ?GetNameHash@StatePluginCollision@player@app@@UEBAIXZ
+?GetNameHash@StatePluginCollision@player@app@@UEBAIXZ:
+    mov rax, 01406fc990h
+    jmp rax
+
+PUBLIC ?RemoveCallback@StatePluginCollision@player@app@@UEAAXXZ
+?RemoveCallback@StatePluginCollision@player@app@@UEAAXXZ:
+    mov rax, 01406fca90h
+    jmp rax
+
+PUBLIC ?ProcessMessage@StatePluginCollision@player@app@@UEAA_NAEAVMessage@fnd@hh@@@Z
+?ProcessMessage@StatePluginCollision@player@app@@UEAA_NAEAVMessage@fnd@hh@@@Z:
+    mov rax, 01406fcaa0h
+    jmp rax
+
+PUBLIC ?Update@StatePluginCollision@player@app@@UEAAXW4UpdatingPhase@fnd@hh@@M@Z
+?Update@StatePluginCollision@player@app@@UEAAXW4UpdatingPhase@fnd@hh@@M@Z:
+    mov rax, 01406fce20h
     jmp rax
 
 PUBLIC ??0Parameter@StateDSurfVirticalJump@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z
@@ -108818,6 +108868,36 @@ PUBLIC ??0BlackboardBattle@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z
 PUBLIC ??_DBlackboardBattle@player@app@@QEAAXXZ
 ??_DBlackboardBattle@player@app@@QEAAXXZ:
     mov rax, 01498d3e90h
+    jmp rax
+
+PUBLIC ?SetFlag08@BlackboardBattle@player@app@@QEAAX_N@Z
+?SetFlag08@BlackboardBattle@player@app@@QEAAX_N@Z:
+    mov rax, 01498d7f60h
+    jmp rax
+
+PUBLIC ?SetFlag04@BlackboardBattle@player@app@@QEAAX_N@Z
+?SetFlag04@BlackboardBattle@player@app@@QEAAX_N@Z:
+    mov rax, 01498e1aa0h
+    jmp rax
+
+PUBLIC ?SetFlag02@BlackboardBattle@player@app@@QEAAX_N@Z
+?SetFlag02@BlackboardBattle@player@app@@QEAAX_N@Z:
+    mov rax, 01498ec600h
+    jmp rax
+
+PUBLIC ?SetFlag01@BlackboardBattle@player@app@@QEAAX_N@Z
+?SetFlag01@BlackboardBattle@player@app@@QEAAX_N@Z:
+    mov rax, 01498eff60h
+    jmp rax
+
+PUBLIC ?SetFlag010@BlackboardBattle@player@app@@QEAAX_N@Z
+?SetFlag010@BlackboardBattle@player@app@@QEAAX_N@Z:
+    mov rax, 01498f2750h
+    jmp rax
+
+PUBLIC ?SetFlag020@BlackboardBattle@player@app@@QEAAX_N@Z
+?SetFlag020@BlackboardBattle@player@app@@QEAAX_N@Z:
+    mov rax, 01498fa180h
     jmp rax
 
 PUBLIC ??0BlackboardContent@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z

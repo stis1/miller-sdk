@@ -31,7 +31,7 @@ namespace app::player {
         enum class CombatFlag : unsigned int
         {
             JUMP = 0x00,
-            DOUBLE_JUMP = 0x01,  // turning off this makes Shadow do jumpdash
+            DOUBLE_JUMP = 0x01, // turning off this makes Shadow do jumpdash
             BOOST = 0x02,
             AIR_BOOST = 0x03,
             HOMING_ATTACK = 0x04,
@@ -45,15 +45,12 @@ namespace app::player {
             MOVEMENT = 0x21,
             RAIL_GRINDING = 0x2A,
             CYBER_CORRUPTION_CHAOS = 0x30, // Frontiers leftover
-            CYBER_CORRUPTOIN_RHEA = 0x31, // Frontiers leftover
+            CYBER_CORRUPTOIN_RHEA = 0x31,  // Frontiers leftover
             D_BLOW = 0x32,
             D_SURF = 0x33,
             D_AMOEBA = 0x34,
             D_WINGS = 0x35,
-            JUMP2 = 0x40 // Also a jump for some reason
         };
-
-
         enum class WorldFlag : unsigned int
         {
             KILLED = 0x01,

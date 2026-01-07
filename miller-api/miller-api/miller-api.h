@@ -831,6 +831,7 @@ namespace millersdk::ucsl {
 #include "Application/Player/StatePlugin/StatePlugin.h"
 #include "Application/Player/StatePlugin/StatePluginManager.h"
 #include "Application/Player/StatePlugin/StatePluginBoost.h"
+#include "Application/Player/StatePlugin/StatePluginCollision.h"
 #include "Application/Player/StatePlugin/StatePluginCyberStart.h"
 #include "Application/Player/GravityController.h"
 #include "Application/Player/GOCPlayerHsm.h"

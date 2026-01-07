@@ -28,6 +28,13 @@ namespace app::player {
         uint16_t unk17;
 
         virtual unsigned int GetNameHash() const override;
+        
+        void SetFlag01(bool enabled);
+        void SetFlag02(bool enabled);
+        void SetFlag04(bool enabled);
+        void SetFlag08(bool enabled);
+        void SetFlag010(bool enabled);
+        void SetFlag020(bool enabled);
 
         DEFAULT_CREATE_FUNC(BlackboardBattle);
     };

@@ -12414,6 +12414,7 @@
 14060af50,j_??0PlayerInformationUpdater@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z,0
 14060bfe0,j_??0Blackboard@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z,0
 14060c100,j_??_DBlackboard@player@app@@QEAAXXZ,1
+14060c1c0,j_?AddContent@Blackboard@player@app@@QEAAXPEAVBlackboardContent@23@@Z,1
 14060c240,?GetContent@Blackboard@player@app@@QEAAPEAVBlackboardContent@23@I@Z,1
 14060c330,j_??0BlackboardBattle@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z,0
 14060c4a0,j_??_DBlackboardBattle@player@app@@QEAAXXZ,1
@@ -12424,10 +12425,12 @@
 14060c5e0,j_?SetFlag01@BlackboardBattle@player@app@@QEAAX_N@Z,1
 14060c610,j_?SetFlag010@BlackboardBattle@player@app@@QEAAX_N@Z,1
 14060c640,j_?SetFlag020@BlackboardBattle@player@app@@QEAAX_N@Z,1
+14060c670,?Setup@BlackboardBattle@player@app@@QEAAXAEBUDescription@123@@Z,1
 14060c690,j_??0BlackboardContent@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z,1
 14060c6d0,j_??0BlackboardItem@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z,0
 14060c700,j_??_DBlackboardItem@player@app@@QEAAXXZ,1
 14060c760,?GetNameHash@BlackboardItem@player@app@@UEBAIXZ,1
+14060c770,j_?Setup@BlackboardItem@player@app@@QEAAXAEBUDescription@123@@Z,1
 14060c7c0,j_??_GPlayerBlackboardService@player@app@@QEAAXXZ,0
 14060c8d0,?Create@PlayerBlackboardService@player@app@@CAPEAV123@PEAVIAllocator@fnd@csl@@@Z,0
 14060c8d0,?Create@PlayerBlackboardService@player@app@@SAPEAV123@PEAVIAllocator@fnd@csl@@@Z,0
@@ -12439,8 +12442,9 @@
 14060cee0,??_D?$PriorityList@_NV?$Handle@VMessenger@fnd@hh@@V?$HandleManager@VMessenger@fnd@hh@@@23@@fnd@hh@@@ut@app@@QEAAXXZ,1
 14060cf60,j_??_DBlackboardStatus@player@app@@QEAAXXZ,1
 14060d310,?GetNameHash@BlackboardStatus@player@app@@UEBAIXZ,1
-14060d6a0,?SetStateFlag@BlackboardStatus@player@app@@QEAAXW4StateFlag@123@_N@Z,1
 14060d680,j_?SetCombatFlag@BlackboardStatus@player@app@@QEAAXW4CombatFlag@123@_N@Z,1
+14060d6a0,?SetStateFlag@BlackboardStatus@player@app@@QEAAXW4StateFlag@123@_N@Z,1
+14060d750,j_?Setup@BlackboardStatus@player@app@@QEAAXAEBUDescription@123@@Z,1
 14060d760,?GetStateFlag@BlackboardStatus@player@app@@QEAA_NW4StateFlag@123@@Z,1
 14060d7a0,?GetWorldFlag@BlackboardStatus@player@app@@QEAA_NW4WorldFlag@123@@Z,1
 14060d7b0,??_DParameter@StateBoarding@player@app@@QEAAXXZ,0
@@ -15632,6 +15636,8 @@
 1408e2d10,?GetClass@GOCDeformableMeshCollider@gocs@heur@@SAPEBVGOComponentClass@game@hh@@XZ,0
 1408e3240,?GetClass@GOCRigidBody@gocs@heur@@SAPEBVGOComponentClass@game@hh@@XZ,0
 1408e4250,?GetClass@GOCCollisionCache@gocs@heur@@SAPEBVGOComponentClass@game@hh@@XZ,0
+1408e62d0,??0EventQueue@physics@hh@@QEAA@PEAVIAllocator@fnd@csl@@@Z,1
+1408e6320,??_DEventQueue@physics@hh@@QEAAXXZ,1
 1408e98d0,?UnkFunc3@CyanRenderHandler@eff@hh@@UEAAXPEAXI@Z,1
 1408f4340,j_??_DGOCCollisionCache@gocs@heur@@QEAAXXZ,0
 1408f4410,j_?Create@GOCCollisionCache@gocs@heur@@CAPEAV123@PEAVIAllocator@fnd@csl@@@Z,0
@@ -26601,6 +26607,7 @@
 1412bca50,??_7GOCDeformableMeshCollider@gocs@heur@@6B@,0
 1412bcb10,?classId@GOCRigidBody@gocs@heur@@0PEBXEB,0
 1412bcd70,?classId@GOCCollisionCache@gocs@heur@@0PEBXEB,0
+1412bdba0,??_7EventQueue@physics@hh@@6B@,1
 1412beee0,??_7GOCCollisionCache@gocs@heur@@6B@,0
 1412bf610,?classId@GOC6DOFJoint@gocs@heur@@0PEBXEB,0
 1412bf840,?classId@GOCSoftBody@gocs@heur@@0PEBXEB,0
@@ -57838,6 +57845,7 @@
 1498b5120,??0PlayerInformationUpdater@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z,0
 1498c4eb0,??0Blackboard@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z,0
 1498c9e10,??_DBlackboard@player@app@@QEAAXXZ,1
+1498caa10,?AddContent@Blackboard@player@app@@QEAAXPEAVBlackboardContent@23@@Z,1
 1498cbd40,??0BlackboardBattle@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z,0
 1498d3e90,??_DBlackboardBattle@player@app@@QEAAXXZ,1
 1498d7f60,?SetFlag08@BlackboardBattle@player@app@@QEAAX_N@Z,1
@@ -57849,11 +57857,13 @@
 149908ea0,??0BlackboardContent@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z,1
 14990b7e0,??0BlackboardItem@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z,0
 14990d3d0,??_DBlackboardItem@player@app@@QEAAXXZ,1
+149918510,?Setup@BlackboardItem@player@app@@QEAAXAEBUDescription@123@@Z,1
 149918690,??_GPlayerBlackboardService@player@app@@QEAAXXZ,0
 149920860,??0BlackboardSpeed@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z,0
 149931290,??0BlackboardStatus@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z,1
 14993b890,??_DBlackboardStatus@player@app@@QEAAXXZ,1
 149980e30,?SetCombatFlag@BlackboardStatus@player@app@@QEAAXW4CombatFlag@123@_N@Z,1
+149987f10,?Setup@BlackboardStatus@player@app@@QEAAXAEBUDescription@123@@Z,1
 14998f350,??_DParameter@StateFall@player@app@@QEAAXXZ,0
 14998f350,??_DParameter@StateDamageRunning@player@app@@QEAAXXZ,0
 14998f350,??_DParameter@StateTreadmill@player@app@@QEAAXXZ,0

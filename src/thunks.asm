@@ -41755,6 +41755,11 @@ PUBLIC ?GetNameHash@BlackboardBattle@player@app@@UEBAIXZ
     mov rax, 014060c510h
     jmp rax
 
+PUBLIC ?Setup@BlackboardBattle@player@app@@QEAAXAEBUDescription@123@@Z
+?Setup@BlackboardBattle@player@app@@QEAAXAEBUDescription@123@@Z:
+    mov rax, 014060c670h
+    jmp rax
+
 PUBLIC ?GetNameHash@BlackboardItem@player@app@@UEBAIXZ
 ?GetNameHash@BlackboardItem@player@app@@UEBAIXZ:
     mov rax, 014060c760h
@@ -54448,6 +54453,16 @@ PUBLIC ?GetClass@GOCRigidBody@gocs@heur@@SAPEBVGOComponentClass@game@hh@@XZ
 PUBLIC ?GetClass@GOCCollisionCache@gocs@heur@@SAPEBVGOComponentClass@game@hh@@XZ
 ?GetClass@GOCCollisionCache@gocs@heur@@SAPEBVGOComponentClass@game@hh@@XZ:
     mov rax, 01408e4250h
+    jmp rax
+
+PUBLIC ??0EventQueue@physics@hh@@QEAA@PEAVIAllocator@fnd@csl@@@Z
+??0EventQueue@physics@hh@@QEAA@PEAVIAllocator@fnd@csl@@@Z:
+    mov rax, 01408e62d0h
+    jmp rax
+
+PUBLIC ??_DEventQueue@physics@hh@@QEAAXXZ
+??_DEventQueue@physics@hh@@QEAAXXZ:
+    mov rax, 01408e6320h
     jmp rax
 
 PUBLIC ?UnkFunc3@CyanRenderHandler@eff@hh@@UEAAXPEAXI@Z
@@ -108850,6 +108865,11 @@ PUBLIC ??_DBlackboard@player@app@@QEAAXXZ
     mov rax, 01498c9e10h
     jmp rax
 
+PUBLIC ?AddContent@Blackboard@player@app@@QEAAXPEAVBlackboardContent@23@@Z
+?AddContent@Blackboard@player@app@@QEAAXPEAVBlackboardContent@23@@Z:
+    mov rax, 01498caa10h
+    jmp rax
+
 PUBLIC ??0BlackboardBattle@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z
 ??0BlackboardBattle@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z:
     mov rax, 01498cbd40h
@@ -108905,6 +108925,11 @@ PUBLIC ??_DBlackboardItem@player@app@@QEAAXXZ
     mov rax, 014990d3d0h
     jmp rax
 
+PUBLIC ?Setup@BlackboardItem@player@app@@QEAAXAEBUDescription@123@@Z
+?Setup@BlackboardItem@player@app@@QEAAXAEBUDescription@123@@Z:
+    mov rax, 0149918510h
+    jmp rax
+
 PUBLIC ??_GPlayerBlackboardService@player@app@@QEAAXXZ
 ??_GPlayerBlackboardService@player@app@@QEAAXXZ:
     mov rax, 0149918690h
@@ -108928,6 +108953,11 @@ PUBLIC ??_DBlackboardStatus@player@app@@QEAAXXZ
 PUBLIC ?SetCombatFlag@BlackboardStatus@player@app@@QEAAXW4CombatFlag@123@_N@Z
 ?SetCombatFlag@BlackboardStatus@player@app@@QEAAXW4CombatFlag@123@_N@Z:
     mov rax, 0149980e30h
+    jmp rax
+
+PUBLIC ?Setup@BlackboardStatus@player@app@@QEAAXAEBUDescription@123@@Z
+?Setup@BlackboardStatus@player@app@@QEAAXAEBUDescription@123@@Z:
+    mov rax, 0149987f10h
     jmp rax
 
 PUBLIC ??_DParameter@StateFall@player@app@@QEAAXXZ

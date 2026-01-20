@@ -109185,6 +109185,11 @@ PUBLIC ??_DGOCPlayerHsm@player@app@@QEAAXXZ
     mov rax, 0149d8c710h
     jmp rax
 
+PUBLIC ?ChangeState@GOCPlayerHsm@player@app@@QEAAXHI@Z
+?ChangeState@GOCPlayerHsm@player@app@@QEAAXHI@Z:
+    mov rax, 0149d990a0h
+    jmp rax
+
 PUBLIC ?OnGOCEvent@GOCPlayerHsm@player@app@@UEAAXW4GOCEvent@GOComponent@game@hh@@AEAVGameObject@67@PEAX@Z
 ?OnGOCEvent@GOCPlayerHsm@player@app@@UEAAXW4GOCEvent@GOComponent@game@hh@@AEAVGameObject@67@PEAX@Z:
     mov rax, 0149db6720h

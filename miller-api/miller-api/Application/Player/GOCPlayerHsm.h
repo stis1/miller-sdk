@@ -44,7 +44,7 @@ namespace app::player {
 		virtual bool ProcessMessage(hh::fnd::Message& msg) override;
 		virtual void OnGOCEvent(GOCEvent event, hh::game::GameObject& ownerGameObject, void* data) override;
         void Setup(const SetupInfo& setupInfo);
-        void SetState(uint32_t stateId, uint32_t unkParam1);
+        void ChangeState(int32_t stateId, uint32_t priority);
         int GetCurrentState() const;
         GOCOMPONENT_CLASS_DECLARATION(GOCPlayerHsm);
     };

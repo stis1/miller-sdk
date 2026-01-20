@@ -52,19 +52,19 @@ namespace app::level {
         std::optional<csl::math::Vector3> vector4210;
         std::optional<csl::math::Vector3> vector4230;
         std::optional<uint8_t> byte250;
-        std::optional<csl::math::Vector2> vector2254;
-        std::optional<csl::math::Vector2> vector2260;
-        std::optional<uint32_t> boostGaugeCount;
+        std::optional<csl::math::Vector2> leftStickInput; // player left stick input?
+        std::optional<csl::math::Vector2> rightStickInput; // player right stick input?
+        std::optional<uint32_t> currentBoostGauge;
         std::optional<uint8_t> byte274;
         std::optional<float> stamina;
         std::optional<float> dword280;
         std::optional<uint8_t> byte288;
         std::optional<uint8_t> byte28A;
-        std::optional<uint32_t> dword28C;
+        std::optional<uint32_t> maxBoostGauge; // max boost gauge?   
         std::optional<uint32_t> dword294;
         std::optional<uint32_t> dword29C;
         std::optional<uint8_t> byte2A4;
-        std::optional<uint8_t> byte2A6;
+        std::optional<uint8_t> isGrounded; // maybe isGrounded
         std::optional<uint8_t> byte2A8;
         std::optional<uint8_t> byte2AA;
         std::optional<csl::math::Vector3> groundNormal;
@@ -72,13 +72,13 @@ namespace app::level {
         std::optional<csl::math::Vector3> vector42E0;
         std::optional<uint32_t> dword300;
         std::optional<uint32_t> dword308;
-        std::optional<uint8_t> byte310;
-        std::optional<uint8_t> byte312;
-        std::optional<uint8_t> byte314;
-        std::optional<uint8_t> byte316;
-        std::optional<uint8_t> byte318;
-        std::optional<uint8_t> byte31A;
-        std::optional<uint8_t> byte31C;
+        std::optional<uint8_t> isBoosting_ns; // boosting
+        std::optional<uint8_t> grinding_ns; // maybe Grinding
+        std::optional<uint8_t> grinding2_ns; // maybe grinding but not on rail
+        std::optional<uint8_t> homing; // homing?
+        std::optional<uint8_t> inJump; // maybe jump
+        std::optional<uint8_t> inDoubleJump; // maybe doubleJump
+        std::optional<uint8_t> falling; // falling?
         std::optional<uint8_t> byte31E;
         std::optional<uint8_t> byte320;
         std::optional<uint8_t> byte322;
@@ -87,8 +87,8 @@ namespace app::level {
         std::optional<uint8_t> byte328;
         std::optional<uint8_t> byte32A;
         std::optional<uint8_t> byte32C;
-        std::optional<uint8_t> byte32E;
-        std::optional<uint8_t> byte330;
+        std::optional<uint8_t> airBoosting; // air boosting?
+        std::optional<uint8_t> stomping; // stomping?
         std::optional<uint8_t> byte332;
         std::optional<uint8_t> byte334;
         std::optional<uint8_t> byte336;
@@ -117,7 +117,7 @@ namespace app::level {
         std::optional<uint8_t> byte364;
         std::optional<uint8_t> byte366;
         std::optional<uint8_t> byte368;
-        std::optional<uint8_t> byte36A;
+        std::optional<uint8_t> noInputs_afk_ns; // afk?
         std::optional<uint8_t> byte36C;
         std::optional<uint8_t> byte36E;
         std::optional<uint8_t> byte370;
@@ -129,8 +129,8 @@ namespace app::level {
         std::optional<uint8_t> byte37C;
         std::optional<uint8_t> byte37E;
         std::optional<uint8_t> byte380;
-        std::optional<uint32_t> dword384;
-        std::optional<uint32_t> dword38C;
+        std::optional<uint32_t> currentRings; // current rings
+        std::optional<uint32_t> maxRings; // max rings
         std::optional<uint8_t> byte394;
         std::optional<uint8_t> byte396;
         std::optional<uint8_t> byte398;

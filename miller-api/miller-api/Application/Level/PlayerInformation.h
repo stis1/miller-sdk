@@ -35,7 +35,7 @@ namespace app::level {
         std::optional<hh::fnd::Handle<app::player::Player>> playerObject;
         std::optional<csl::math::Vector3> position;
         std::optional<csl::math::Quaternion> rotation;
-        std::optional<float> dword80;
+        std::optional<float> Speed;
         std::optional<csl::math::Vector3> vector470;
         std::optional<csl::math::Vector3> vector490;
         std::optional<csl::math::Vector3> vector4B0;

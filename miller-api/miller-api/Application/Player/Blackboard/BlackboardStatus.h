@@ -50,6 +50,7 @@ namespace app::player {
             D_SURF = 0x33,
             D_AMOEBA = 0x34,
             D_WINGS = 0x35,
+            BRAKE = 0x52,
         };
         enum class WorldFlag : unsigned int
         {

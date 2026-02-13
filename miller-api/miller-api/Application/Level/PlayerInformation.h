@@ -31,7 +31,8 @@ namespace app::level {
             uint32_t unk1;
             uint32_t unk2;
         };
-
+        
+        //_ns = not sure
         std::optional<hh::fnd::Handle<app::player::Player>> playerObject;
         std::optional<csl::math::Vector3> position;
         std::optional<csl::math::Quaternion> rotation;
@@ -52,19 +53,19 @@ namespace app::level {
         std::optional<csl::math::Vector3> vector4210;
         std::optional<csl::math::Vector3> vector4230;
         std::optional<uint8_t> byte250;
-        std::optional<csl::math::Vector2> leftStickInput; // player left stick input?
-        std::optional<csl::math::Vector2> rightStickInput; // player right stick input?
+        std::optional<csl::math::Vector2> leftStickInput;
+        std::optional<csl::math::Vector2> rightStickInput;
         std::optional<uint32_t> currentBoostGauge;
         std::optional<uint8_t> byte274;
         std::optional<float> stamina;
         std::optional<float> dword280;
         std::optional<uint8_t> byte288;
         std::optional<uint8_t> byte28A;
-        std::optional<uint32_t> maxBoostGauge; // max boost gauge?   
+        std::optional<uint32_t> maxBoostGauge;
         std::optional<uint32_t> dword294;
         std::optional<uint32_t> dword29C;
         std::optional<uint8_t> byte2A4;
-        std::optional<uint8_t> isGrounded; // maybe isGrounded
+        std::optional<uint8_t> isGrounded;
         std::optional<uint8_t> byte2A8;
         std::optional<uint8_t> byte2AA;
         std::optional<csl::math::Vector3> groundNormal;
@@ -72,13 +73,13 @@ namespace app::level {
         std::optional<csl::math::Vector3> vector42E0;
         std::optional<uint32_t> dword300;
         std::optional<uint32_t> dword308;
-        std::optional<uint8_t> isBoosting_ns; // boosting
+        std::optional<uint8_t> isBoosting_ns;
         std::optional<uint8_t> grinding_ns; // maybe Grinding
         std::optional<uint8_t> grinding2_ns; // maybe grinding but not on rail
-        std::optional<uint8_t> homing; // homing?
-        std::optional<uint8_t> inJump; // maybe jump
-        std::optional<uint8_t> inDoubleJump; // maybe doubleJump
-        std::optional<uint8_t> falling; // falling?
+        std::optional<uint8_t> homing;
+        std::optional<uint8_t> inJump;
+        std::optional<uint8_t> inDoubleJump;
+        std::optional<uint8_t> falling;
         std::optional<uint8_t> byte31E;
         std::optional<uint8_t> byte320;
         std::optional<uint8_t> byte322;
@@ -117,20 +118,20 @@ namespace app::level {
         std::optional<uint8_t> byte364;
         std::optional<uint8_t> byte366;
         std::optional<uint8_t> byte368;
-        std::optional<uint8_t> noInputs_afk_ns; // afk?
+        std::optional<uint8_t> noInputs_afk_ns;
         std::optional<uint8_t> byte36C;
         std::optional<uint8_t> byte36E;
         std::optional<uint8_t> byte370;
         std::optional<uint8_t> byte372;
         std::optional<uint8_t> byte374;
-        std::optional<uint8_t> byte376;
+        std::optional<uint8_t> outOfControl_ns;
         std::optional<uint8_t> byte378;
         std::optional<uint8_t> byte37A;
-        std::optional<uint8_t> byte37C;
+        std::optional<uint8_t> sideView_ns;
         std::optional<uint8_t> byte37E;
         std::optional<uint8_t> byte380;
-        std::optional<uint32_t> currentRings; // current rings
-        std::optional<uint32_t> maxRings; // max rings
+        std::optional<uint32_t> currentRings;
+        std::optional<uint32_t> maxRings;
         std::optional<uint8_t> byte394;
         std::optional<uint8_t> byte396;
         std::optional<uint8_t> byte398;

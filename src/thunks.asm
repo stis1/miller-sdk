@@ -41800,9 +41800,19 @@ PUBLIC ?GetNameHash@BlackboardStatus@player@app@@UEBAIXZ
     mov rax, 014060d310h
     jmp rax
 
+PUBLIC ?GetCombatFlag@BlackboardStatus@player@app@@QEAA_NW4CombatFlag@123@@Z
+?GetCombatFlag@BlackboardStatus@player@app@@QEAA_NW4CombatFlag@123@@Z:
+    mov rax, 014060d360h
+    jmp rax
+
 PUBLIC ?SetStateFlag@BlackboardStatus@player@app@@QEAAXW4StateFlag@123@_N@Z
 ?SetStateFlag@BlackboardStatus@player@app@@QEAAXW4StateFlag@123@_N@Z:
     mov rax, 014060d6a0h
+    jmp rax
+
+PUBLIC ?SetWorldFlag@BlackboardStatus@player@app@@QEAAXW4WorldFlag@123@_N@Z
+?SetWorldFlag@BlackboardStatus@player@app@@QEAAXW4WorldFlag@123@_N@Z:
+    mov rax, 014060d710h
     jmp rax
 
 PUBLIC ?GetStateFlag@BlackboardStatus@player@app@@QEAA_NW4StateFlag@123@@Z

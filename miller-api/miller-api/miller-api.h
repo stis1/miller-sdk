@@ -884,6 +884,7 @@ namespace millersdk::ucsl {
 #include "Application/UI/RequestOverlayBegin.h"
 #include "Application/UI/RequestOverlayWindow.h"
 #include "Application/UI/RequestOverlayCaption.h"
+#include "Application/UI/UICursor.h"
 #include "Application/UI/UIOverlayService.h"
 #include "Application/UI/Messages.h"
 
@@ -924,7 +925,7 @@ namespace millersdk::ucsl {
 #include "Application/Graphics/SceneParameters.h"
 #include "Application/Graphics/FxParamManager.h"
 // #include "Application/Graphics/FxParamTimeProgressExtension.h"
-// #include "Application/Graphics/FxColManager.h"
+#include "Application/Graphics/FxColManager.h"
 #include "Application/ResSvCol2.h"
 
 // #include "Application/Terrain/TerrainManager.h"

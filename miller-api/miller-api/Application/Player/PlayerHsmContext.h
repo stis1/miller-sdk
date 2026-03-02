@@ -37,5 +37,8 @@ namespace app::player {
         ~PlayerHsmContext();
 
         void Setup(GOCPlayerHsm* gocPlayerHsm);
+
+        void ChangeState(const char* stateName); // maybe this is also PlayAnimationEffects?
+        void StopEffects(); //kill me please, i've got this from Frontiers hmm lib...
     };
 }

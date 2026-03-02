@@ -31,7 +31,7 @@ namespace app::player {
         enum class CombatFlag : unsigned int
         {
             JUMP = 0x00,
-            DOUBLE_JUMP = 0x01, // turning off this makes Shadow do jumpdash
+            DOUBLE_JUMP = 0x01, // turning off double jump allows to do jump dash
             BOOST = 0x02,
             AIR_BOOST = 0x03,
             HOMING_ATTACK = 0x04,
@@ -43,6 +43,7 @@ namespace app::player {
             BOARDING = 0x1B, // Frontiers skateboarding
             CAMERA_MOVEMENT = 0x20,
             MOVEMENT = 0x21,
+		    WALL_JUMP_LAND = 0x22,
             RAIL_GRINDING = 0x2A,
             CYBER_CORRUPTION_CHAOS = 0x30, // Frontiers leftover
             CYBER_CORRUPTOIN_RHEA = 0x31,  // Frontiers leftover
@@ -58,15 +59,15 @@ namespace app::player {
             DAMAGED_OR_REPELLED = 0x02,
             OUT_OF_CONTROL = 0x07,
             AUTO_RUN = 0x0A,
+            BRAKEMaybe=0x13,
             CYBER_SPACE = 0x1E,
-            WALL_JUMP_LAND = 0x22,
-            POWER_BOOST = 0x28,
             AIR_TRICK = 0x2A,
             HEIGHT_MAP_COLLISION = 0x37,
             NO_CLIP = 0x38,
             BATTLE = 0x3A,
             NITRO_BOOST = 0x43,
             MAX_SPEED_CHALLENGE = 0x44,
+
         };
         enum class Difficulty : uint8_t
         {
@@ -89,7 +90,7 @@ namespace app::player {
         char playerId;
         uint32_t dword24;
         uint32_t dword28;
-        uint64_t qword30; // also flag
+        csl::ut::Bitset<CombatFlag, uint64_t> combatFlags; // also flag
         csl::ut::Bitset<StateFlag, uint64_t> stateFlags;
         csl::ut::Bitset<WorldFlag, uint64_t> worldFlags[2];
         float outOfControlTime;
@@ -113,9 +114,11 @@ namespace app::player {
 
         virtual unsigned int GetNameHash() const override;
 
+
         void SetCombatFlag(CombatFlag combatFlag, bool enabled);
         void SetStateFlag(StateFlag stateFlag, bool enabled);
         void SetWorldFlag(WorldFlag worldFlag, bool enabled);
+        bool GetCombatFlag(CombatFlag combatFlag);
         bool GetStateFlag(StateFlag stateFlag);
         bool GetWorldFlag(WorldFlag worldFlag);
 

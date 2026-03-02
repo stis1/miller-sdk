@@ -22550,6 +22550,11 @@ PUBLIC ?InterpolateAnisotropicObb@FxColManager@gfx@app@@KAMAEBVVector3@math@csl@
     mov rax, 01401c0020h
     jmp rax
 
+PUBLIC ?GetClass@FxColManager@gfx@app@@SAPEBVGameServiceClass@game@hh@@XZ
+?GetClass@FxColManager@gfx@app@@SAPEBVGameServiceClass@game@hh@@XZ:
+    mov rax, 01401c0010h
+    jmp rax
+
 PUBLIC ?InterpolateCylinder@FxColManager@gfx@app@@KAMAEBVVector3@math@csl@@0VQuaternion@56@MMM@Z
 ?InterpolateCylinder@FxColManager@gfx@app@@KAMAEBVVector3@math@csl@@0VQuaternion@56@MMM@Z:
     mov rax, 01401c0170h
@@ -64543,6 +64548,11 @@ PUBLIC ?IntersectionRay3Aabb@ut@hh@@YA_NAEBVVector3@math@csl@@0MAEBVAabb@geom@5@
 PUBLIC ?AddObject@BvWorld@ut@hh@@QEAAXPEAUBvWorldHandle@23@@Z
 ?AddObject@BvWorld@ut@hh@@QEAAXPEAUBvWorldHandle@23@@Z:
     mov rax, 0140c15cf0h
+    jmp rax
+
+PUBLIC ?build@KdTreeUtil@ut@hh@@CAXPEBVKdTreeNode@23@HPEAVResKdTreeNodeData@23@PEAH@Z
+?build@KdTreeUtil@ut@hh@@CAXPEBVKdTreeNode@23@HPEAVResKdTreeNodeData@23@PEAH@Z:
+    mov rax, 0140c174F0h
     jmp rax
 
 PUBLIC ?orderLeafNodesAndObjects@KdTreeUtil@ut@hh@@CAXPEBVKdTreeNode@23@PEAPEAVResKdTreeLeafNodeData@23@PEAIPEAH@Z
@@ -106545,6 +106555,11 @@ PUBLIC ?EndLevel@FxColManager@gfx@app@@QEAAXXZ
     mov rax, 0147ef35c0h
     jmp rax
 
+PUBLIC ?CreateKdTree@FxColManager@gfx@app@@QEAAPEAVKdTree@ut@hh@@PEAVResFxColFile2@23@@Z
+?CreateKdTree@FxColManager@gfx@app@@QEAAPEAVKdTree@ut@hh@@PEAVResFxColFile2@23@@Z:
+    mov rax, 0147ef2290h
+    jmp rax
+
 PUBLIC ??0Mutex@fnd@csl@@QEAA@XZ
 ??0Mutex@fnd@csl@@QEAA@XZ:
     mov rax, 01480b9390h
@@ -110538,6 +110553,16 @@ PUBLIC ?AddCallback@StatePluginCollision@player@app@@UEAAXXZ
 PUBLIC ?SetTypeAndRadius@StatePluginCollision@player@app@@QEAAXEM@Z
 ?SetTypeAndRadius@StatePluginCollision@player@app@@QEAAXEM@Z:
     mov rax, 014ade57b0h
+    jmp rax
+
+PUBLIC ?ChangeState@PlayerHsmContext@player@app@@QEAAXPEBD@Z
+?ChangeState@PlayerHsmContext@player@app@@QEAAXPEBD@Z:
+    mov rax, 014aff5670h
+    jmp rax
+
+PUBLIC ?StopEffects@PlayerHsmContext@player@app@@QEAAXXZ
+?StopEffects@PlayerHsmContext@player@app@@QEAAXXZ:
+    mov rax, 014AFF9F80h
     jmp rax
 
 PUBLIC ??0VisualHuman@player@app@@QEAA@PEAVIAllocator@fnd@csl@@PEAVGameObject@game@hh@@PEAUComponentCollection@12@@Z
@@ -116233,6 +116258,16 @@ PUBLIC ?OpenFileForWriting@IFileSystem@fnd@hh@@UEAAPEAVStreamWriter@23@AEBVUri@2
 PUBLIC ?Setup@ThreadSafeTlsfHeapAllocator@fnd@hh@@QEAAXPEAVIAllocator@2csl@@AEBUSetupInfo@123@@Z
 ?Setup@ThreadSafeTlsfHeapAllocator@fnd@hh@@QEAAXPEAVIAllocator@2csl@@AEBUSetupInfo@123@@Z:
     mov rax, 0153936160h
+    jmp rax
+
+PUBLIC ?BuildResource@KdTreeUtil@ut@hh@@SAXAEBVKdTree@23@PEAX@Z
+?BuildResource@KdTreeUtil@ut@hh@@SAXAEBVKdTree@23@PEAX@Z:
+    mov rax, 01539ad5b0h
+    jmp rax
+
+PUBLIC ?CalcMemorySize@KdTreeUtil@ut@hh@@SA_KAEBVKdTree@23@@Z
+?CalcMemorySize@KdTreeUtil@ut@hh@@SA_KAEBVKdTree@23@@Z:
+    mov rax, 01539b4070h
     jmp rax
 
 PUBLIC ?Create@HandleManagerBase@fnd@hh@@SAPEAV123@PEAVIAllocator@2csl@@H@Z

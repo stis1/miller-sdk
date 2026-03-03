@@ -48970,6 +48970,11 @@ PUBLIC ??0Parameter@StateSlalomStep@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z
     mov rax, 0140700490h
     jmp rax
 
+PUBLIC ?DoHoming@PlayerHsmContext@player@app@@QEAA_N_N@Z
+?DoHoming@PlayerHsmContext@player@app@@QEAA_N_N@Z:
+    mov rax, 0140705b70h
+    jmp rax
+
 PUBLIC ??0VisualDAmoeba@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z
 ??0VisualDAmoeba@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z:
     mov rax, 014070e7e0h

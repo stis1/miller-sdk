@@ -40,5 +40,6 @@ namespace app::player {
 
         void ChangeState(const char* stateName); // maybe this is also PlayAnimationEffects?
         void StopEffects(); //kill me please, i've got this from Frontiers hmm lib...
+        bool DoHoming(bool unk); // found this neat guy for delegating homing attack, really don't know where it's place should be
     };
 }

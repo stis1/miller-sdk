@@ -815,7 +815,6 @@ namespace millersdk::ucsl {
 
 // #include "Application/Player/CharacterId.h"
 #include "Application/Player/PlayerCounterTimer.h"
-#include "Application/Player/PlayerHsmContext.h"
 #include "Application/Player/Blackboard/BlackboardContent.h"
 #include "Application/Player/Blackboard/BlackboardSpeed.h"
 #include "Application/Player/Blackboard/BlackboardItem.h"
@@ -823,6 +822,7 @@ namespace millersdk::ucsl {
 #include "Application/Player/Blackboard/BlackboardStatus.h"
 #include "Application/Player/Blackboard/Blackboard.h"
 #include "Application/Player/Blackboard/GOCPlayerBlackboard.h"
+#include "Application/Player/PlayerHsmContext.h"
 #include "Application/Player/StateParameter.h"
 #include "Application/Player/RelayedFlagsParameter.h"
 #include "Application/Player/PlayerStateParameter.h"
@@ -884,7 +884,6 @@ namespace millersdk::ucsl {
 #include "Application/UI/RequestOverlayBegin.h"
 #include "Application/UI/RequestOverlayWindow.h"
 #include "Application/UI/RequestOverlayCaption.h"
-#include "Application/UI/UICursor.h"
 #include "Application/UI/UIOverlayService.h"
 #include "Application/UI/Messages.h"
 

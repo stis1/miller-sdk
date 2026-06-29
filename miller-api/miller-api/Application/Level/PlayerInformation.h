@@ -55,13 +55,13 @@ namespace app::level {
         std::optional<uint8_t> byte250;
         std::optional<csl::math::Vector2> leftStickInput;
         std::optional<csl::math::Vector2> rightStickInput;
-        std::optional<uint32_t> currentBoostGauge;
+        std::optional<float> currentBoostGauge;
         std::optional<uint8_t> byte274;
-        std::optional<float> stamina;
-        std::optional<float> dword280;
+        std::optional<float> ChaosControlGauge;
+        std::optional<float> ChaosControlTimer;
         std::optional<uint8_t> byte288;
         std::optional<uint8_t> byte28A;
-        std::optional<uint32_t> maxBoostGauge;
+        std::optional<float> maxBoostGauge;
         std::optional<uint32_t> dword294;
         std::optional<uint32_t> dword29C;
         std::optional<uint8_t> byte2A4;
@@ -73,13 +73,13 @@ namespace app::level {
         std::optional<csl::math::Vector3> vector42E0;
         std::optional<uint32_t> dword300;
         std::optional<uint32_t> dword308;
-        std::optional<uint8_t> isBoosting_ns;
-        std::optional<uint8_t> grinding_ns; // maybe Grinding
-        std::optional<uint8_t> grinding2_ns; // maybe grinding but not on rail
-        std::optional<bool> homing;
-        std::optional<bool> inJump;
-        std::optional<bool> inDoubleJump;
-        std::optional<uint8_t> falling;
+        std::optional<bool> isBoosting_ns;
+        std::optional<bool> isGrinding_ns; // maybe Grinding
+        std::optional<bool> isGrinding2_ns; // maybe if GrindRoot is active?
+        std::optional<bool> isHoming;
+        std::optional<bool> isJump;
+        std::optional<bool> isDoubleJump;
+        std::optional<bool> isFalling;
         std::optional<uint8_t> byte31E;
         std::optional<uint8_t> byte320;
         std::optional<uint8_t> byte322;
@@ -88,27 +88,27 @@ namespace app::level {
         std::optional<uint8_t> byte328;
         std::optional<uint8_t> byte32A;
         std::optional<uint8_t> byte32C;
-        std::optional<bool> airBoost; // air boosting?
-        std::optional<bool> stomping; // stomping?
+        std::optional<bool> isAirBoost;
+        std::optional<bool> isStomping;
         std::optional<uint8_t> byte332;
         std::optional<uint8_t> byte334;
         std::optional<uint8_t> byte336;
-        std::optional<bool> dAmoeba; // doom amoeba 
-        std::optional<bool> dAmoeba_jump; // amoeba jump?
+        std::optional<bool> isDAmoeba;
+        std::optional<bool> isDAmoebaJump;
         std::optional<uint8_t> byte33C;
         std::optional<uint8_t> byte33E;
         std::optional<uint8_t> byte340;
         std::optional<uint8_t> byte342;
-        std::optional<bool> dBlow_Aim; // doom blast aim
+        std::optional<bool> isDBlowAim;
         std::optional<uint8_t> byte346;
         std::optional<uint8_t> byte348;
-        std::optional<bool> dBlowBea; // doom blast beating up
+        std::optional<bool> isDBlowRush;
         std::optional<uint8_t> byte34C;
         std::optional<uint8_t> byte34E;
-        std::optional<bool> dBlowLaunch; // doom blast launch
-        std::optional<bool> chaosSnap; // chaos snap
-        std::optional<bool> dWings; // doom wings
-        std::optional<bool> dWingsFly; // doom wings fly
+        std::optional<bool> isDBlowLaunch;
+        std::optional<bool> isWarpAttack;
+        std::optional<bool> isDWings;
+        std::optional<bool> isDWingsFly;
         std::optional<uint8_t> byte358;
         std::optional<uint8_t> byte35A;
         std::optional<uint8_t> byte35C;
@@ -118,7 +118,7 @@ namespace app::level {
         std::optional<uint8_t> byte364;
         std::optional<uint8_t> byte366;
         std::optional<uint8_t> byte368;
-        std::optional<bool> noInputs_afk_ns;
+        std::optional<bool> noInputs_afk_ns; // this one is really interesting, maybe posture noinput?
         std::optional<uint8_t> byte36C;
         std::optional<uint8_t> byte36E;
         std::optional<uint8_t> byte370;
@@ -136,15 +136,15 @@ namespace app::level {
         std::optional<uint8_t> byte396;
         std::optional<uint8_t> byte398;
         std::optional<Unk2> unk3A0;
-        std::optional<bool> spearCharge; // chaos spear input down
-        std::optional<uint32_t> spearTargets; // chaos spear targets 
+        std::optional<bool> isSpearCharge;
+        std::optional<uint32_t> spearTargets; 
         std::optional<csl::math::Vector3> vector3470;
         std::optional<uint8_t> byte490;
-        std::optional<float> float494;
-        std::optional<float> float49C;
-        std::optional<float> float4A4;
-        std::optional<float> float4AC;
-        std::optional<float> float4B4;
+        std::optional<float> camera_EffectTime;
+        std::optional<float> camera_PeakTime;
+        std::optional<float> camera_EndTime;
+        std::optional<float> camera_MaxFovY;
+        std::optional<float> camera_MinFovY;
         std::optional<csl::math::Transform> transform44C0;
         Unk4 qword510[8];
 

@@ -1,16 +1,16 @@
 #pragma once
 
 namespace app::player {
-    class StatePluginBoost : public PlayerStatePlugin {
+    class StatePluginTimeStop : public PlayerStatePlugin {
     public:
-        static constexpr const char* name = "StatePluginBoost";
+        static constexpr const char* name = "StatePluginTimeStop";
 
         virtual unsigned int GetNameHash();
-        virtual void AddCallback();
+        virtual void AddCallback(); // infected
         virtual void RemoveCallback();
         virtual void Update(hh::fnd::UpdatingPhase phase, const float deltaTime);
         virtual bool ProcessMessage(hh::fnd::Message& message);
 
-        void Boost();
+        void DoSmth(unsigned char type, float radius);
     };
 }

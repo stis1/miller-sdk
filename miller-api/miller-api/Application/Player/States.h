@@ -482,6 +482,7 @@ namespace app::player {
         virtual bool StepPlayerState(PlayerHsmContext& context, float deltaTime) override;
     };
 
+    // offset: 57 checkFallTime, 58 NeutralStickTimer 
     class StateDrift : public PlayerStateActionBase {
     public:
         virtual void EnterPlayerState(PlayerHsmContext& context, int previousState) override;
@@ -685,11 +686,13 @@ namespace app::player {
         virtual bool StepPlayerState(PlayerHsmContext& context, float deltaTime) override;
     };
 
+    // offset: 58 DropDashCharge, 238 EnableDropDash
     class StateJumpDash : public PlayerStateActionBase {
     public:
         virtual void EnterPlayerState(PlayerHsmContext& context, int previousState) override;
         virtual void LeavePlayerState(PlayerHsmContext& context, int nextState) override;
         virtual bool StepPlayerState(PlayerHsmContext& context, float deltaTime) override;
+        
     };
 
     class StateLavaDead : public PlayerStateBase {
@@ -864,6 +867,7 @@ namespace app::player {
         virtual void EnterPlayerState(PlayerHsmContext& context, int previousState) override;
         virtual void LeavePlayerState(PlayerHsmContext& context, int nextState) override;
         virtual bool StepPlayerState(PlayerHsmContext& context, float deltaTime) override;
+        bool CheckShift(PlayerHsmContext& context); // L1/R1 slide
     };
 
     class StateRunOnWater : public PlayerStateActionBase {

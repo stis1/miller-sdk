@@ -16,9 +16,9 @@ namespace app::player {
             STOMP = 0x0C,
             DIVING = 0x0D,
             DIVING_BOOST = 0x0E,
-            CYLOOP = 0x11,
-            CYLOOP_END = 0x12,
-            DRIFT = 0x13,
+            DRIFT = 0x11,
+            DRIFT_DASH = 0x12,
+            JUMP_DASH = 0x13, // jumpdash
             HOMING = 0x17,
             PARRY = 0x18,
             WALL_CLIMB = 0x19,
@@ -27,6 +27,7 @@ namespace app::player {
             BOARDING = 0x1E,
             SPRING_JUMP = 0x21,
             SPIN_DASH = 0x22,
+            GRIND_STEP = 0x120,
         };
         enum class CombatFlag : unsigned int
         {
@@ -40,6 +41,9 @@ namespace app::player {
             CROUCH = 0x0D,
             STOMP = 0x0E,
             SLIDE = 0x10,
+            BRAKE = 0x11,
+            DROP_DASH = 0x19,
+            WALLJUMP = 0x1A,
             BOARDING = 0x1B, // Frontiers skateboarding
             CAMERA_MOVEMENT = 0x20,
             MOVEMENT = 0x21,
@@ -51,7 +55,6 @@ namespace app::player {
             D_SURF = 0x33,
             D_AMOEBA = 0x34,
             D_WINGS = 0x35,
-            BRAKE = 0x52,
         };
         enum class WorldFlag : unsigned int
         {
@@ -60,23 +63,16 @@ namespace app::player {
             OUT_OF_CONTROL = 0x07,
             AUTO_RUN = 0x0A,
             BRAKEMaybe=0x13,
+            BATTLE = 0x14,
             CYBER_SPACE = 0x1E,
             AIR_TRICK = 0x2A,
             HEIGHT_MAP_COLLISION = 0x37,
-            NO_CLIP = 0x38,
-            BATTLE = 0x3A,
+            DOOM_WINGS = 0x38,
+            aBATTLE = 0x3A,
             NITRO_BOOST = 0x43,
             MAX_SPEED_CHALLENGE = 0x44,
-
         };
-        enum class Difficulty : uint8_t
-        {
-            EASY = 0x00,
-            NORMAL = 0x01,
-            HARD = 0x02,
-            EXTREME = 0x03,
-        };
-
+        
         enum class Dimension : unsigned int {
 
         };
@@ -89,10 +85,10 @@ namespace app::player {
         static constexpr const char* name = "BlackboardStatus";
         char playerId;
         uint32_t dword24;
-        uint32_t dword28;
-        csl::ut::Bitset<CombatFlag, uint64_t> combatFlags; // also flag
+        uint32_t dword28; // equals to 3 if Movie Shadow
+        csl::ut::Bitset<CombatFlag, uint64_t> combatFlags;
         csl::ut::Bitset<StateFlag, uint64_t> stateFlags;
-        csl::ut::Bitset<WorldFlag, uint64_t> worldFlags[2];
+        csl::ut::Bitset<WorldFlag, uint64_t> worldFlags[2]; // hell is going on in 2nd?
         float outOfControlTime;
         float inControlTime;
         float float58;

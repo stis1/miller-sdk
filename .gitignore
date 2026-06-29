@@ -1,3 +1,5 @@
 /.vs
 /build
 /out
+src/thunks.asm
+addresses.csv

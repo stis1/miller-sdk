@@ -19860,6 +19860,11 @@ PUBLIC ??_GGOCHealth@game@app@@QEAAXXZ
     mov rax, 0140149940h
     jmp rax
 
+PUBLIC ?AddPlugin@?$StatePluginManager@VPlayerHsmContext@player@app@@@player@app@@QEAAXPEAV?$StatePlugin@VPlayerHsmContext@player@app@@@23@@Z
+?AddPlugin@?$StatePluginManager@VPlayerHsmContext@player@app@@@player@app@@QEAAXPEAV?$StatePlugin@VPlayerHsmContext@player@app@@@23@@Z:
+    mov rax, 01499a1130h
+    jmp rax
+
 PUBLIC ?Create@GOCHealth@game@app@@CAPEAV123@PEAVIAllocator@fnd@csl@@@Z
 ?Create@GOCHealth@game@app@@CAPEAV123@PEAVIAllocator@fnd@csl@@@Z:
     mov rax, 0140149fd0h
@@ -42185,8 +42190,8 @@ PUBLIC ??_DPlayerHsmContext@player@app@@QEAAXXZ
     mov rax, 014062e250h
     jmp rax
 
-PUBLIC ?ChangeHsmState@PlayerHsmContext@player@app@@QEAAXHI@Z
-?ChangeHsmState@PlayerHsmContext@player@app@@QEAAXHI@Z:
+PUBLIC ?ChangeHsmState@PlayerHsmContext@player@app@@QEAA_NHI@Z
+?ChangeHsmState@PlayerHsmContext@player@app@@QEAA_NHI@Z:
     mov rax, 014062e420h
     jmp rax
 
@@ -42233,6 +42238,11 @@ PUBLIC ?GetClass@GOCPlayerInformationUpdater@player@app@@SAPEBVGOComponentClass@
 PUBLIC ?Create@GOCPlayerKinematicParams@player@app@@CAPEAVGOComponent@game@hh@@PEAVIAllocator@fnd@csl@@@Z
 ?Create@GOCPlayerKinematicParams@player@app@@CAPEAVGOComponent@game@hh@@PEAVIAllocator@fnd@csl@@@Z:
     mov rax, 01406304b0h
+    jmp rax
+
+PUBLIC ?GetSpeed@GOCPlayerKinematicParams@player@app@@QEBAMXZ
+?GetSpeed@GOCPlayerKinematicParams@player@app@@QEBAMXZ:
+    mov rax, 0140631290h
     jmp rax
 
 PUBLIC ?GetWorldMatrix@GOCPlayerKinematicParams@player@app@@QEBA?AVMatrix34@math@csl@@XZ

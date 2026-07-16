@@ -6345,6 +6345,7 @@
 1400e7d70,??0KeybindMonitorImGui@dbg@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z,0
 1400e7f30,??_GKeybindMonitorImGui@dbg@app@@QEAAXXZ,0
 1400e8010,?Create@KeybindMonitorImGui@dbg@app@@CAPEAV123@PEAVIAllocator@fnd@csl@@@Z,0
+1400E8050,?GetPlugin@?$StatePluginManager@VPlayerHsmContext@player@app@@@player@app@@QEAAPEAV?$StatePlugin@VPlayerHsmContext@player@app@@@23@I@Z,1
 1400e8540,??_DResShaderList@resources@heur@@QEAAXXZ,0
 1400e8540,??_DGOCSkinnedMeshCollider@gocs@heur@@QEAAXXZ,0
 1400e8540,??_DResParticleLocation@resources@heur@@QEAAXXZ,0
@@ -12478,6 +12479,7 @@
 14060d7f0,j_??_DParameter@StateDSurfVirticalJump@player@app@@QEAAXXZ,0
 14060d830,j_??_GShadow@player@app@@QEAAXXZ,0
 14060d8b0,??_DStateParameter@player@app@@QEAAXXZ,1
+14060d8f0,j_?AddPlugin@?$StatePluginManager@VPlayerHsmContext@player@app@@@player@app@@QEAAXPEAV?$StatePlugin@VPlayerHsmContext@player@app@@@23@@Z,1
 14060da60,??0Parameter@StateBoarding@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z,0
 14060dac0,??0Parameter@StateFall@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z,0
 14060f8d0,?GetClass@Shadow@player@app@@SAPEBVGameObjectClass@game@hh@@XZ,0
@@ -57988,6 +57990,7 @@
 14998f350,??_DParameter@StateRunOnWater@player@app@@QEAAXXZ,0
 14998f350,??_DParameter@StateDSurfVirticalJump@player@app@@QEAAXXZ,0
 149999400,??_GShadow@player@app@@QEAAXXZ,0
+1499A1130,?AddPlugin@?$StatePluginManager@VPlayerHsmContext@player@app@@@player@app@@QEAAXPEAV?$StatePlugin@VPlayerHsmContext@player@app@@@23@@Z,1
 1499dd640,??0EffectEyeUV@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z,0
 149a50250,??0EffectHoming@player@app@@QEAA@PEAVIAllocator@fnd@csl@@@Z,0
 149a58ab0,??_GEffectHoming@player@app@@QEAAXXZ,0

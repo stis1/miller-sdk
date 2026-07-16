@@ -3,8 +3,11 @@
 namespace app::player {
     class PlayerPostureContext : public hh::fnd::BaseObject {
     public:
-        // GOCPlayerKineticParams* gocPlayerKineticParams;
-        // GOCPlayerBlackboard* gocPlayerBlackboard;
+        app::player::Player* player;
+        app::player::GOCPlayerKinematicParams* qword18;
+        app::player::GOCPlayerBlackboard* gocPlayerBlackboard;
+        app::player::BlackboardStatus* BlackboardStatus;
+        float dword30; // 360
 
     };
 

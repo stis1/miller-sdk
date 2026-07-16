@@ -6,6 +6,7 @@ namespace app::player {
         struct Unk1 {
             csl::math::Vector4 unk1;
             csl::math::Vector4 unk2;
+            
             uint64_t unk3;
             uint32_t unk4;
             uint32_t unk5;
@@ -120,6 +121,8 @@ namespace app::player {
         void SetRotation(const csl::math::Quaternion& rotation);
         void SetVelocity(const csl::math::Vector4& velocity);
         void SetGravityScale(float gravityScale);
+        float GetSpeed() const;
+        csl::math::Vector3* GetGravity() const;
 
         GOCOMPONENT_CLASS_DECLARATION(GOCPlayerKinematicParams)
     };

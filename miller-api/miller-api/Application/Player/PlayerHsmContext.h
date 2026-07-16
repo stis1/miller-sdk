@@ -38,11 +38,13 @@ namespace app::player {
 
         void Setup(GOCPlayerHsm* gocPlayerHsm);
 
-        void ChangeHsmState(int32_t stateId, uint32_t priority);
+        bool ChangeHsmState(int32_t stateId, uint32_t priority);
+        bool ChangeHsmStateRestart(int32_t stateId, uint32_t priority);
         int GetCurrentState();
 
         bool isGrounded() const;
         bool isOutOfControl() const;
+        bool isAutoRun() const;
         
         bool GetCombatFlag(BlackboardStatus::CombatFlag combatFlag) const;
         bool GetStateFlag(BlackboardStatus::StateFlag stateFlag) const; 
@@ -54,14 +56,18 @@ namespace app::player {
         void ResetStateFlag(BlackboardStatus::StateFlag stateFlag);
         void ResetWorldFlag(BlackboardStatus::WorldFlag worldFlag);
 
-        void ChangeVisualState(const char* stateName, bool unk); // unk goes into app::player::ComponentCollector::unk4, usually is 1
+        void ChangeVisualState(const char* stateName, bool unk); // unk goes into app::player::ComponentCollector::unk4, usually True
         void StopEffects();        
         
-        bool CheckHoming(bool unk, float priorityInputTimeOverrider); // returns True if switched to Homing, bool have some todo with jumpDash
-        bool CheckDSurf(bool unk); // returns True if switched to Surf, not sure about the argument
+        bool CheckHoming(bool doubleJumpOrDashIfFail, float priorityInputTimeOverrider); // returns True if switched to HomingAttack/ChaosWarp/DAmoebaHoming
+        bool CheckDSurf(bool unk); // returns True if switched to Surf, unk ussualy is False (except DSurfSpin)
         bool CheckShiftJumpAir();
         bool CheckDropDash(float charge);
         bool CheckQuickStep();
         bool CheckRunOnWater();
+
+        inline bool IsMovieShadow() {
+            return blackboardStatus->dword28 == 3;
+        }
     };
 }

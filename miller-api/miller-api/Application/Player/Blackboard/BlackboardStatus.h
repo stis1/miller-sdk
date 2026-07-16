@@ -6,7 +6,9 @@ namespace app::player {
         enum class StateFlag : unsigned int
         {
             BOOST = 0x00,
-            AIR_BOOST = 0x04,
+            AIR_BOOST = 0x03,
+            QUICK_STEP = 0x04,
+            GRIND_STEP = 0x05,
             GRIND_JUMP = 0x06,
             GRIND = 0x07,
             JUMP = 0x08,
@@ -16,18 +18,29 @@ namespace app::player {
             STOMP = 0x0C,
             DIVING = 0x0D,
             DIVING_BOOST = 0x0E,
+            CURVE_MOVE = 0x0F,
             DRIFT = 0x11,
             DRIFT_DASH = 0x12,
-            JUMP_DASH = 0x13, // jumpdash
-            HOMING = 0x17,
-            PARRY = 0x18,
+            HOMING = 0x13, // jumpdash
+            TURN = 0x16,
+            SEVENTEEN = 0x17,
+            STAND_ROOT_AFK = 0x18,
             WALL_CLIMB = 0x19,
             IDLE = 0x1A,
+            BOARDING = 0x1B,
             WALL_CLIMB_IDLE = 0x1C,
-            BOARDING = 0x1E,
-            SPRING_JUMP = 0x21,
-            SPIN_DASH = 0x22,
-            GRIND_STEP = 0x120,
+            BOARDINGTWO = 0x1E,
+            SLIDER = 0x20,
+            D_SURF = 0x21,
+            CHAOS_SPEAR = 0x22,
+            D_AMOEBA = 0x23,
+            D_AMOBEA_RELATED = 0x24,
+            D_BLOW_OFF = 0x25,
+            D_BLOW_OFF_2nd = 0x26,
+            D_BLOW_DOWN = 0x27,
+            D_BLOW_UP = 0x29,
+            WARP_ATTACK = 0x2A,
+            DAMAGE_RUNNING = 0x31,
         };
         enum class CombatFlag : unsigned int
         {
@@ -51,10 +64,11 @@ namespace app::player {
             RAIL_GRINDING = 0x2A,
             CYBER_CORRUPTION_CHAOS = 0x30, // Frontiers leftover
             CYBER_CORRUPTOIN_RHEA = 0x31,  // Frontiers leftover
-            D_BLOW = 0x32,
-            D_SURF = 0x33,
-            D_AMOEBA = 0x34,
-            D_WINGS = 0x35,
+            DOOM_BLAST = 0x32,
+            DOOM_SURF = 0x33,
+            DOOM_MORPH = 0x34,
+            DOOM_WINGS = 0x35,
+            DOOM_SPEARS = 0x36,
         };
         enum class WorldFlag : unsigned int
         {
@@ -66,9 +80,11 @@ namespace app::player {
             BATTLE = 0x14,
             CYBER_SPACE = 0x1E,
             AIR_TRICK = 0x2A,
+            GRIND = 0x33,
             HEIGHT_MAP_COLLISION = 0x37,
             DOOM_WINGS = 0x38,
             aBATTLE = 0x3A,
+            THREE_C = 0x3C,
             NITRO_BOOST = 0x43,
             MAX_SPEED_CHALLENGE = 0x44,
         };

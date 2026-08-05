@@ -5,10 +5,12 @@ namespace app::player {
     public:
         static constexpr const char* name = "StatePluginEffect";
         
-        uint64_t qword28;
-        uint64_t qword30;
-        uint64_t qword38;
-        csl::fnd::IAllocator* allocator; // something interesting
+        struct Effect {
+            unsigned int nameHash;
+            hh::eff::EffectHandle handle;
+        };
+
+        csl::ut::MoveArray<Effect> effectList;
         uint8_t byte48;
 
         StatePluginEffect(csl::fnd::IAllocator* allocator);
@@ -17,5 +19,9 @@ namespace app::player {
         
         virtual void RemoveCallback() override;
         virtual void Update(hh::fnd::UpdatingPhase phase, const float deltaTime) override;
+
+        void PlayEffect(unsigned int nameHash, const char* effectName);
+        void PlayEffect(unsigned int nameHash, const char* effectName, int nodeIdx);
+        
     };
 }

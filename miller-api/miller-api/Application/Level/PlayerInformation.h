@@ -55,10 +55,10 @@ namespace app::level {
         std::optional<uint8_t> byte250;
         std::optional<csl::math::Vector2> leftStickInput;
         std::optional<csl::math::Vector2> rightStickInput;
-        std::optional<float> currentBoostGauge;
+        std::optional<float> boostGaugeCount;
         std::optional<uint8_t> byte274;
         std::optional<float> chaosControlGauge;
-        std::optional<float> chaosControlTimer;
+        std::optional<float> chaosControlTime;
         std::optional<uint8_t> byte288;
         std::optional<uint8_t> byte28A;
         std::optional<float> maxBoostGauge;
@@ -68,7 +68,7 @@ namespace app::level {
         std::optional<uint8_t> isGrounded;
         std::optional<uint8_t> byte2A8;
         std::optional<uint8_t> byte2AA;
-        std::optional<csl::math::Vector3> groundNormalVector;
+        std::optional<csl::math::Vector3> groundNormal;
         std::optional<float> altitude;
         std::optional<csl::math::Vector3> vector42E0;
         std::optional<uint32_t> dword300;
@@ -101,7 +101,7 @@ namespace app::level {
         std::optional<uint8_t> byte342;
         std::optional<bool> isDBlowAim;
         std::optional<uint8_t> byte346;
-        std::optional<uint8_t> isDblowDown;
+        std::optional<bool> isDblowDown;
         std::optional<bool> isDBlowRush;
         std::optional<uint8_t> byte34C;
         std::optional<uint8_t> byte34E;

@@ -789,6 +789,7 @@ namespace millersdk::ucsl {
 #include "ApplicationCommon/Game/GOCMotorRotate.h"
 #include "ApplicationCommon/Game/GOCMotorOnPath.h"
 
+#include "Application/Utilities/Timer.h"
 #include "Application/Utilities/PriorityList.h"
 #include "Application/Utilities/SendMessage.h"
 #include "Application/Utilities/TransitionValue.h"
@@ -813,6 +814,8 @@ namespace millersdk::ucsl {
 
 #include "Application/Event/EventPlayer.h"
 
+#include "Application/Game/GOCGravity.h"
+
 // #include "Application/Player/CharacterId.h"
 #include "Application/Player/PlayerCounterTimer.h"
 #include "Application/Player/Blackboard/BlackboardContent.h"
@@ -830,6 +833,7 @@ namespace millersdk::ucsl {
 #include "Application/Player/StatePlugin/StatePluginManager.h"
 #include "Application/Player/StatePlugin/StatePluginEffect.h"
 #include "Application/Player/StatePlugin/StatePluginBoost.h"
+#include "Application/Player/StatePlugin/StatePluginChaosSpear.h"
 #include "Application/Player/StatePlugin/StatePluginGrind.h"
 //#include "Application/Player/StatePlugin/StatePluginBattle.h" - needs hh::physics::GOCColliderListener
 #include "Application/Player/StatePlugin/StatePluginSideview.h"

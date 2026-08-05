@@ -40,6 +40,7 @@ namespace app::player {
             D_BLOW_DOWN = 0x27,
             D_BLOW_UP = 0x29,
             WARP_ATTACK = 0x2A,
+            RUN_ON_WATER = 0x2E,
             DAMAGE_RUNNING = 0x31,
         };
         enum class CombatFlag : unsigned int
@@ -104,7 +105,9 @@ namespace app::player {
         uint32_t dword28; // equals to 3 if Movie Shadow
         csl::ut::Bitset<CombatFlag, uint64_t> combatFlags;
         csl::ut::Bitset<StateFlag, uint64_t> stateFlags;
-        csl::ut::Bitset<WorldFlag, uint64_t> worldFlags[2]; // hell is going on in 2nd?
+        csl::ut::Bitset<WorldFlag, uint64_t> worldFlags;
+        float float48;
+        uint32_t dword4C;
         float outOfControlTime;
         float inControlTime;
         float float58;

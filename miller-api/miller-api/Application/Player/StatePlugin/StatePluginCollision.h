@@ -25,7 +25,7 @@ namespace app::player {
             // int unk4;
         // };
 
-        // static constexpr const char* name = "StatePluginCollision";
+        static constexpr const char* name = "StatePluginCollision";
         
         // csl::ut::MoveArray<DamageCollider> damageColliders;
         // app::ut::PriorityList<BodyAttackParam, unsigned int> bodyAttackParams;
@@ -36,7 +36,7 @@ namespace app::player {
         uint64_t qword30;
         uint64_t qword38;
         csl::fnd::IAllocator* allocator;
-        app::physics::GOCColliderQuery* gocColliderQuery;
+        app::physics::GOCMoveSphereColliderQuery* gocColliderQuery;
         char type;
 
         StatePluginCollision(csl::fnd::IAllocator* allocator);

@@ -30,7 +30,7 @@ namespace app::player {
         hh::fnd::Reference<PlayerStateParameter> playerStateParameter;
         hh::fnd::Reference<StatePluginManager<PlayerHsmContext>> statePluginManager;
         uint32_t unk105;
-        uint32_t unk105b;
+        uint32_t nextState; // nextState
         uint32_t unk106;
         csl::ut::Bitset<Flag> flags;
         csl::ut::InplaceMoveArray<void*, 1> unk108;

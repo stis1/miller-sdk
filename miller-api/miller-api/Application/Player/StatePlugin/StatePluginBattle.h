@@ -13,18 +13,10 @@ namespace app::player {
         uint64_t qword58;
         uint64_t qword60;
         csl::math::Vector4 unk
-        uint64_t qword80;
-        uint64_t qword88;
-        uint64_t qword90;
-        csl::fnd::IAllocator* allocator;
-        uint64_t qwordA0;
-        uint64_t qwordA8;
-        uint64_t qwordB0;
-        csl::fnd::IAllocator* allocator2;
-        uint64_t qwordD0;
-        uint64_t qwordD8;
-        uint64_t qwordE0;
-        csl::fnd::IAllocator* allocator3;
+        csl::ut::MoveArray<int64_t> Unk1;
+        csl::ut::MoveArray<int64_t> Unk2;
+        app::ut::Timer timerC0;
+        csl::ut::MoveArray<int64_t> Unk3;
         uint64_t qwordF0;
         uint64_t qwordF8;
         uint32_t dword100;

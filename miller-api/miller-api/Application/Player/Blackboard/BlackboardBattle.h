@@ -26,7 +26,7 @@ namespace app::player {
         void SetFlag04(bool enabled);
         void SetFlag08(bool enabled);
         void SetFlag010(bool enabled);
-        void SetFlag020(bool enabled);
+        void SetFlagVulnerable(bool enabled);
 
         void Setup(const Description& desc);
 

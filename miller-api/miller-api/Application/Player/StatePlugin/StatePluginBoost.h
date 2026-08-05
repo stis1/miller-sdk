@@ -10,17 +10,14 @@ namespace app::player {
         hh::eff::EffectHandle wind;
         hh::eff::EffectHandle boost;
         float dword60;
-        float dword64;
+        float maxBoost;
         float meter;
         uint32_t dword6C;
-        uint32_t dword70;
+        float dword70;
         float dword74;
         float dword78;
-        uint32_t dword7C;
-        uint64_t qword80;
-        uint64_t qword88;
-        uint64_t qword90;
-        csl::fnd::IAllocator* allocator; // something interesting
+        float dword7C;
+        csl::ut::MoveArray<int64_t> unk1; // something interesting
         uint16_t wordA0;
         uint8_t byteA2; 
         float cameraEffectTime;
@@ -29,7 +26,7 @@ namespace app::player {
         float cameraMaxFovY;
         float cameraMinFovY;
         float blurTime;
-        uint32_t dwordBC;
+        float dwordBC;
         uint32_t dwordC0;
         float GroundedTime;
         float dwordC8;

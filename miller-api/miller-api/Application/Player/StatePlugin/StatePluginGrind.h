@@ -4,10 +4,7 @@ namespace app::player {
     class StatePluginGrind : public PlayerStatePlugin {
         static constexpr const char* name = "StatePluginGrind";
 
-        uint64_t qword28;
-        uint64_t qword30;
-        uint64_t qword38;
-        csl::fnd::IAllocator* allocator;
+        csl::ut::MoveArray<int64_t> Unk1;
         uint64_t qword48;
         uint64_t qword50;
         hh::eff::EffectHandle EffectHandle;

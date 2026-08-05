@@ -3,7 +3,7 @@
 namespace app::player {
     class StatePluginDWing : public PlayerStatePlugin, public app::evt::EventPlayerListener {
     public:
-        static constexpr const char* name = "StatePluginDWing";
+        static constexpr const char* name = "StatePluginDWing"; // 0x2293CDEB
 
         // float dword28;
         // float dword2C;

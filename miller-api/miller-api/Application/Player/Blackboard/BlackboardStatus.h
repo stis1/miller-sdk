@@ -21,7 +21,7 @@ namespace app::player {
             CURVE_MOVE = 0x0F,
             DRIFT = 0x11,
             DRIFT_DASH = 0x12,
-            HOMING = 0x13, // jumpdash
+            HOMING = 0x13, // also jumpdash for no reason...
             TURN = 0x16,
             SEVENTEEN = 0x17,
             STAND_ROOT_AFK = 0x18,

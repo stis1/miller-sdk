@@ -25,11 +25,9 @@ namespace app::gfx {
 		app::gfx::FxParamManager* fxParamManager;
 		hh::eff::EffectManager* effectManager;
 		app::camera::CameraService* cameraService;
-		//app::game::TimeService* timeService; 
-		uint64_t unk1;
+		app::game::TimeService* timeService; 
 		hh::dv::DiEventManager* diEventManager;
-		//hh::dv::DiEventPreviewManager* diEventPreviewManager;
-		uint64_t unk1prbblydieventpreviewmanager;
+		hh::dv::DiEventPreviewManager* diEventPreviewManager;
 		csl::ut::VariableString stageName;
 		hh::fnd::Reference<app::gfx::ResFxColFile2> resource;
 		csl::ut::String terrainPackfileName;
@@ -61,14 +59,14 @@ namespace app::gfx {
 		void HandleLightParamCollisionShapesLight();
 		void HandleLightParamCollisionShapesIBL();
 
-		static float InterpolateCollisionShape(app::gfx::FxColCollisionShapeData* shape, const csl::math::Vector3& position);
+		static float InterpolateCollisionShape(FxColCollisionShapeData* shape, const csl::math::Vector3& position);
 		static float InterpolateSphere(const csl::math::Vector3& cameraPosition, const csl::math::Vector3& position, float radius, float borderThickness);
 		static float InterpolateCylinder(const csl::math::Vector3& cameraPosition, const csl::math::Vector3& position, const csl::math::Quaternion, float halfHeight, float radius, float borderThickness);
 		static float InterpolateAnisotropicObb(const csl::math::Vector3& cameraPosition, const csl::math::Vector3& position, const csl::math::Quaternion, float halfWidth, float halfHeight, float halfDepth, float positiveDepthBorderThickness, float negativeDepthBorderThickness);
 		static float InterpolateIsotropicObb(const csl::math::Vector3& cameraPosition, const csl::math::Vector3& position, const csl::math::Quaternion, float halfWidth, float halfHeight, float halfDepth, float borderThickness);
 
 	public:
-		virtual void* GetRuntimeTypeInfo();
+		virtual void* GetRuntimeTypeInfo() override;
 		virtual bool ProcessMessage(hh::fnd::Message& message) override;
 		virtual void OnAddedToGame() override;
 		virtual void OnRemovedFromGame() override;
@@ -78,7 +76,7 @@ namespace app::gfx {
 		virtual void GameServiceRemovedCallback(hh::game::GameService* gameService) override;
 		virtual void PostStepCallback(hh::game::GameManager* gameManager, const hh::game::GameStepInfo& gameStepInfo) override;
 		virtual void UpdateCallback(hh::game::GameManager* gameManager, const hh::game::GameStepInfo& gameStepInfo) override;
-        virtual void DSCL_UnkFunc7();
+        virtual void DSCL_UnkFunc7() override;
         virtual void DSCL_UnkFunc9() override;
 
 		void StartLevel(const char* stageName);

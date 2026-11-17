@@ -32,7 +32,7 @@ namespace app::player {
             hh::fnd::Reference<hh::fnd::ResReflectionT<PlayerCameraSetParameters>> cameraSetParameters;
         };
 
-        GOCPlayerParameter(csl::fnd::IAllocator* allocator);
+        GOCPlayerParameter(csl::fnd::IAllocator* allocator) : hh::game::GOComponent{ allocator } {}
         void Setup(const SetupInfo& setup);
 
         PlayerParamCommon& GetCommonParameters() const;

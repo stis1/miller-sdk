@@ -45,13 +45,16 @@ namespace hh::physics {
         ColliShapeParameters parameters;
     };
 
+    class MsgTriggerEnter;
+    class MsgTriggerLeave;
+    class MsgTriggerStay;
     class GOCCollider;
     class GOCColliderListener {
     public:
         virtual ~GOCColliderListener() = default;
-        virtual void GOCCL_UnkFunc1(GOCCollider* collider) {}
-        virtual void GOCCL_UnkFunc2(GOCCollider* collider) {}
-        virtual void GOCCL_UnkFunc3(GOCCollider* collider) {}
+        virtual void OnEnter(hh::physics::MsgTriggerEnter& msg) {}
+        virtual void OnStay(hh::physics::MsgTriggerStay& msg) {}
+        virtual void OnLeave(hh::physics::MsgTriggerLeave& msg) {}
     };
 
     class GOCCollider : public game::GOComponent, public fnd::HFrame::Listener {

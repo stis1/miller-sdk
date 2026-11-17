@@ -5,11 +5,11 @@ namespace app::player {
     public:
         static constexpr const char* name = "StatePluginWallJump";
 
-        uint64_t unk1;
-        csl::math::Vector4 unk2;
-        float Timer;
-        char isActive;
-        bool isTouching;
+        size_t unk1{};
+        csl::math::Vector4 unk2{};
+        float Timer{};
+        char isActive{};
+        bool isTouching{};
 
         StatePluginWallJump(csl::fnd::IAllocator* allocator);
 

@@ -39,4 +39,23 @@ namespace app::player {
         uint64_t qword30;
         uint8_t byte38;
     };
+
+    class MsgSetAbilityEnabled : public fnd::AppMessage<MsgSetAbilityEnabled> {
+        enum class Ability : uint8_t {
+            CAMERA,
+            MOVEMENT,
+            JUMP,
+            BOOST,
+            AIR_BOOST,
+            HOMING_ATTACK,
+            UNK1, // probably ChaosCtrl
+            SIDE_STEP,
+            ALL,
+            DOOM_SPEARS
+        };
+        Ability ability;
+        bool enable;
+
+        MsgSetAbilityEnabled() : fnd::AppMessage<MsgSetAbilityEnabled>{ hh::fnd::MessageID::SET_ABILITY_ENABLED } {}
+    };
 }

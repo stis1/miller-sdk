@@ -10,7 +10,7 @@ namespace app::player {
             int ringCapacity;
         };
 
-        uint32_t unk1;
+        uint32_t unk1; // unused?
         uint32_t ringCapacity;
         uint32_t ringCount;
 

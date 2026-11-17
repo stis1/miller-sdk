@@ -5,17 +5,26 @@ namespace app::player {
     public:
         static constexpr const char* name = "StatePluginTimeStop";
         
-        uint64_t qword30;
-        uint64_t qword38;
-        uint64_t qword40;
-        uint64_t qword48;
-        uint64_t qword50;
-        uint64_t qword58;
-        uint8_t byte60;
-        uint32_t dword68;
-        uint32_t dword70;
+        int32_t dword30;
+        float gaugeFlt;
+        int32_t gaugeInt;
+        uint32_t dword3C;
+        uint32_t dword40;
+        uint32_t dword44;
+        float float48;
+        float float4C;
+        float float50;
+        float float54;
+        float startMargin;
+        bool gaugeStop;
+        bool isTimeStop;
+        bool gaugeFill;
+        bool byte5F;
+        bool byte60;
+        uint64_t qword68;
+        uint64_t qword70;
         hh::snd::SoundHandle soundHandle;
-        uint8_t byte7C;
+        bool gaugeLock;
 
         StatePluginTimeStop(csl::fnd::IAllocator* allocator);
 

@@ -2,11 +2,17 @@
 
 namespace app::player {
     class RelayedFlagsParameter : public StateParameter {
-        uint32_t unk101;
     public:
+        static constexpr uint32_t hash = 0x40BA33D2;
+        enum class Flags : uint32_t {
+            HOLD_BOOST = 5
+        };
+
+        csl::ut::Bitset<Flags> flags;
+
         RelayedFlagsParameter();
-        virtual uint64_t Clone(csl::fnd::IAllocator* allocator) override;
-        virtual uint64_t GetNameHash() override;
-        virtual uint64_t Clear() override;
+        virtual RelayedFlagsParameter* Clone(csl::fnd::IAllocator* allocator) override;
+        virtual uint32_t GetNameHash() override;
+        virtual void Clear() override;
     };
 }

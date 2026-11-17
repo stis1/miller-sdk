@@ -31,18 +31,17 @@ namespace app::level {
             uint32_t unk1;
             uint32_t unk2;
         };
-        
-        //_ns = not sure
+
         std::optional<hh::fnd::Handle<app::player::Player>> playerObject;
         std::optional<csl::math::Vector3> position;
         std::optional<csl::math::Quaternion> rotation;
         std::optional<float> speed;
-        std::optional<csl::math::Vector3> vector470;
+        std::optional<csl::math::Vector3> velocity;
         std::optional<csl::math::Vector3> vector490;
         std::optional<csl::math::Vector3> vector4B0;
-        std::optional<csl::math::Vector3> vector4D0;
-        std::optional<csl::math::Vector3> vector4F0;
-        std::optional<csl::math::Vector3> vector4110;
+        std::optional<csl::math::Vector3> playerForward;
+        std::optional<csl::math::Vector3> playerUp;
+        std::optional<csl::math::Vector3> playerRight;
         std::optional<csl::math::Vector3> gravityVector;
         std::optional<csl::math::Vector3> vector4150;
         std::optional<csl::math::Vector3> vector4170;
@@ -51,7 +50,7 @@ namespace app::level {
         std::optional<csl::math::Vector3> vector41D0;
         std::optional<csl::math::Vector3> vector41F0;
         std::optional<csl::math::Vector3> vector4210;
-        std::optional<csl::math::Vector3> vector4230;
+        std::optional<csl::math::Vector3> worldInput;
         std::optional<uint8_t> byte250;
         std::optional<csl::math::Vector2> leftStickInput;
         std::optional<csl::math::Vector2> rightStickInput;
@@ -65,17 +64,17 @@ namespace app::level {
         std::optional<uint32_t> dword294;
         std::optional<uint32_t> dword29C;
         std::optional<uint8_t> byte2A4;
-        std::optional<uint8_t> isGrounded;
+        std::optional<bool> isGrounded;
         std::optional<uint8_t> byte2A8;
-        std::optional<uint8_t> byte2AA;
+        std::optional<bool> isLoopTerrain;
         std::optional<csl::math::Vector3> groundNormal;
         std::optional<float> altitude;
-        std::optional<csl::math::Vector3> vector42E0;
+        std::optional<csl::math::Vector3> vector42E0; // groundInfo->unk1
         std::optional<uint32_t> dword300;
         std::optional<uint32_t> dword308;
         std::optional<bool> isBoost;
-        std::optional<bool> isGrinding_ns; // maybe Grinding
-        std::optional<bool> isGrinding2_ns; // maybe if GrindRoot is active?
+        std::optional<bool> isGrindStep;
+        std::optional<bool> isGrind;
         std::optional<bool> isHoming;
         std::optional<bool> isJump;
         std::optional<bool> isDoubleJump;
@@ -84,14 +83,14 @@ namespace app::level {
         std::optional<bool> isDriftDash;
         std::optional<uint8_t> byte322;
         std::optional<uint8_t> byte324;
-        std::optional<uint8_t> isDiving;
-        std::optional<uint8_t> isDivingBoost;
-        std::optional<uint8_t> isTurn;
+        std::optional<bool> isDiving;
+        std::optional<bool> isDivingFast;
+        std::optional<bool> isTurn;
         std::optional<uint8_t> byte32C;
         std::optional<bool> isAirBoost;
         std::optional<bool> isStomping;
         std::optional<uint8_t> byte332;
-        std::optional<uint8_t> isDSurf;
+        std::optional<bool> isDSurf;
         std::optional<uint8_t> byte336;
         std::optional<bool> isDAmoeba;
         std::optional<bool> isDAmoebaJump;
@@ -111,25 +110,25 @@ namespace app::level {
         std::optional<bool> isDWingsFly;
         std::optional<uint8_t> byte358;
         std::optional<uint8_t> byte35A;
-        std::optional<uint8_t> isChaosSpearLaunch;
+        std::optional<bool> isChaosSpearLaunch;
         std::optional<uint8_t> byte35E;
-        std::optional<uint8_t> isDead;
-        std::optional<uint8_t> isDamaged;
+        std::optional<bool> isDead;
+        std::optional<bool> isDamaged;
         std::optional<uint8_t> byte364;
-        std::optional<uint8_t> byte366;
+        std::optional<bool> isBattle;
         std::optional<uint8_t> byte368;
-        std::optional<bool> stateStandRoot; // this one is really interesting, maybe posture noinput?
+        std::optional<bool> stateStandRoot;
         std::optional<uint8_t> byte36C;
         std::optional<uint8_t> byte36E;
         std::optional<uint8_t> byte370;
         std::optional<uint8_t> byte372;
-        std::optional<uint8_t> byte374;
+        std::optional<bool> airTrickPending; // combatFlag && !boarding && !worldFlagAirTrick
         std::optional<bool> isOutOfControl;
         std::optional<uint8_t> byte378;
         std::optional<uint8_t> byte37A;
         std::optional<bool> isSideView;
         std::optional<uint8_t> byte37E;
-        std::optional<uint8_t> currentCollisionType; // StatePluginCollision
+        std::optional<char> currentCollisionType; // StatePluginCollision
         std::optional<uint32_t> currentRings;
         std::optional<uint32_t> maxRings;
         std::optional<uint8_t> byte394;

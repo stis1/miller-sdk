@@ -7,8 +7,8 @@ namespace app::player {
         StateParameter(uint32_t unk1Param) {}
 
         virtual ~StateParameter() = default;
-        virtual uint64_t Clone(csl::fnd::IAllocator* allocator) = 0;
-        virtual uint64_t GetNameHash() = 0;
-        virtual uint64_t Clear() {}
+        virtual StateParameter* Clone(csl::fnd::IAllocator* allocator) = 0;
+        virtual uint32_t GetNameHash() = 0;
+        virtual void Clear() {}
     };
 }

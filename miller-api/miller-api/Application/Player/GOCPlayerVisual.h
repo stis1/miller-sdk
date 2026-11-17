@@ -46,8 +46,11 @@ namespace app::player {
         PlayerVisual* GetPlayerVisual(unsigned int nameHash) const;
         PlayerVisual* GetCurrentPlayerVisual() const;
 
+
+        bool isFlagContained(const char* flag, signed int layer);
         bool SwitchPlayerVisual(char id, bool unkParam1);
         void TriggerSwitchPlayerVisual(char id, bool unkParam1);
+        // unk is usually 0xFE, i suppose it's which Visual should switch anim state
         void SetAnimationState(const char* animationState, uint8_t unk);
         void SetAnimationStateWithoutTransition(const char* animationState);
         bool SetAnimationVariableFloat(const char* variableName, float value);

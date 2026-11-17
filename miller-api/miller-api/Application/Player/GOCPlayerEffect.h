@@ -24,6 +24,10 @@ namespace app::player {
         virtual void PVL_UnkFunc2(void* unkParam1, void* unkParam2) override;
 
         GOCOMPONENT_CLASS_DECLARATION(GOCPlayerEffect);
+        // only place where i found bool being (conditionally) true 1406391AB
+        // usually is false, layer is from playercommon/effect_database.rfl
+        bool LayerEnable(int layer, bool unk);
+        void LayerDisable(int layer);
         void Setup(const SetupInfo& setupInfo);
         void AddEffectList(const hh::fnd::Reference<EffectList>& effectList);
     };

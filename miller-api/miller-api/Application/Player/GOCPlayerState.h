@@ -28,9 +28,9 @@ namespace app::player {
         virtual bool UpdateAsync(PlayerHsmContext& context, hh::fnd::UpdatingPhase phase, float deltaTime) override { return 0; }
 
         virtual bool InitPlayerState(PlayerHsmContext& context) { return 0; }
-        virtual void EnterPlayerState(PlayerHsmContext& context, int previousState);
-        virtual void LeavePlayerState(PlayerHsmContext& context, int nextState);
+        virtual void EnterPlayerState(PlayerHsmContext& context, int previousState) { return; }
+        virtual void LeavePlayerState(PlayerHsmContext& context, int nextState) { return; }
         virtual bool UpdatePlayerState(PlayerHsmContext& context, hh::fnd::UpdatingPhase phase, float deltaTime);
-        virtual bool StepPlayerState(PlayerHsmContext& context, float deltaTime);
+        virtual bool StepPlayerState(PlayerHsmContext& context, float deltaTime) { return false; }
     };
 }

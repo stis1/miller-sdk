@@ -3,6 +3,10 @@
 namespace app::player {
     class StatePluginBoost : public PlayerStatePlugin, public app::evt::EventPlayerListener {
     public:
+        enum class Flags : uint16_t {
+            ALLOW_BOOST = 0
+        };
+        
         static constexpr const char* name = "StatePluginBoost";
         
         hh::snd::SoundHandle soundHandle;
@@ -18,7 +22,7 @@ namespace app::player {
         float dword78;
         float dword7C;
         csl::ut::MoveArray<int64_t> unk1; // something interesting
-        uint16_t wordA0;
+        csl::ut::Bitset<Flags> flags;
         uint8_t byteA2; 
         float cameraEffectTime;
         float cameraPeakTime;

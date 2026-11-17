@@ -19,6 +19,8 @@ namespace app::player {
         csl::ut::VariableString unk7;
         short flags;
 
+        // F0 AirBoostParameters->additionalTransitTime
+
         virtual unsigned int GetNameHash() const override;
         
         void SetFlag01(bool enabled);

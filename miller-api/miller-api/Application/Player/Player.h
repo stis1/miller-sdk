@@ -27,11 +27,14 @@ namespace app::player {
             float startSpeed;
             float startTime;
             float startOutOfControlTime;
-            uint8_t unk14;
             PlayerSetupInfo();
         };
 
         PlayerSetupInfo setupInfo;
+        uint32_t dword2B0;
+        uint32_t dword2B4;
+        uint32_t dword2B8;
+        uint64_t qword2C0;
 
         Player(csl::fnd::IAllocator* allocator);
         

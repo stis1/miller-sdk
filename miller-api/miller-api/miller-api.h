@@ -94,6 +94,7 @@ namespace millersdk::ucsl {
 #include "cslib/csl/ut/String.h"
 #include "cslib/csl/ut/VariableString.h"
 #include "cslib/csl/ut/Byteswap.h"
+#include "cslib/csl/ut/CircularBuffer.h"
 
 #include "cslib/csl/fnd/Singleton.h"
 #include "cslib/csl/fnd/Mutex.h"
@@ -835,7 +836,7 @@ namespace millersdk::ucsl {
 #include "Application/Player/StatePlugin/StatePluginBoost.h"
 #include "Application/Player/StatePlugin/StatePluginChaosSpear.h"
 #include "Application/Player/StatePlugin/StatePluginGrind.h"
-//#include "Application/Player/StatePlugin/StatePluginBattle.h" - needs hh::physics::GOCColliderListener
+//#include "Application/Player/StatePlugin/StatePluginBattle.h"
 #include "Application/Player/StatePlugin/StatePluginSideview.h"
 #include "Application/Player/StatePlugin/StatePluginCollision.h"
 #include "Application/Player/StatePlugin/StatePluginTimeStop.h"
@@ -847,10 +848,13 @@ namespace millersdk::ucsl {
 #include "Application/Player/GOCPlayerKinematicParams.h"
 #include "Application/Player/PlayerCollision.h"
 #include "Application/Player/PlayerController.h"
+#include "Application/Player/GOCPlayerPosture.h"
 #include "Application/Player/GOCPlayerCollider.h"
 #include "Application/Player/ComponentCollector.h"
 #include "Application/Player/PlayerEffect.h"
 #include "Application/Player/EffectList.h"
+#include "Application/Player/HomingTargetInfo.h"
+#include "Application/Player/GOCPlayerEyesight.h"
 #include "Application/Player/VisualLocator.h"
 #include "Application/Player/VisualLocatorNormal.h"
 #include "Application/Player/VisualLocatorManager.h"
@@ -866,7 +870,7 @@ namespace millersdk::ucsl {
 #include "Application/Player/Player.h"
 #include "Application/Player/PlayerRaycastInterface.h"
 #include "Application/Player/Characters/VisualShadow.h"
-// #include "Application/Player/Characters/Shadow.h"
+#include "Application/Player/Characters/Shadow.h"
 #include "Application/Player/PlayerReplayService.h"
 #include "Application/Player/GOCPlayerReplayRecorder.h"
 #include "Application/Player/GOCPlayerReplayPlayer.h"
@@ -897,6 +901,7 @@ namespace millersdk::ucsl {
 #include "Application/UI/Messages.h"
 
 #include "Application/Game/Helpers.h"
+#include "Application/Game/GOCHealth.h"
 #include "Application/Game/GameCondition.h"
 // #include "Application/Game/GameModeResourceCollection.h"
 // #include "Application/Game/GameModeResourceModule.h"
@@ -923,7 +928,7 @@ namespace millersdk::ucsl {
 #include "Application/Game/GrindModelUpdater.h"
 #include "Application/Game/GOCGrind.h"
 // #include "Application/Game/Messages.h"
-// #include "Application/Game/Posture.h"
+#include "Application/Game/Posture.h"
 #include "Application/Game/GOCLookAt.h"
 
 // #include "Application/Physics/GOCColliderQuery.h"
@@ -938,8 +943,16 @@ namespace millersdk::ucsl {
 
 // #include "Application/Terrain/TerrainManager.h"
 
-// #include "Application/Player/PlayerPosture.h"
-// #include "Application/Player/Postures/PostureSliding.h"
+#include "Application/Player/PlayerGrindSpeedParam.h"
+#include "Application/Player/PlayerExtraParam.h"
+#include "Application/Player/PlayerSpeedParam.h"
+#include "Application/Player/PlayerPosture.h"
+#include "Application/Player/Postures/PostureDrift.h"
+#include "Application/Player/Postures/PostureDriftDash.h"
+#include "Application/Player/Postures/PostureSliding.h"
+#include "Application/Player/Postures/PostureJump.h"
+#include "Application/Player/Postures/PostureGrind.h"
+
 
 #include "Application/Dv/AppDvElementBase.h"
 #include "Application/Dv/AppDvSceneObjectBase.h"

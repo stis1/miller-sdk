@@ -5,25 +5,25 @@ namespace app::player {
     public:
         static constexpr const char* name = "StatePluginDWing"; // 0x2293CDEB
 
-        // float dword28;
-        // float dword2C;
-        // float dword30;
-        // float dword34;
-        // float dword38;
-        // float dword3C;
-        // float dword40;
-        // float dword44;
-        // float dword48;
-        // float dword4C;
-        // float dword50;
-        // float dword54;
-        // float dword58;
-        // hh::snd::SoundHandle soundHandle;
+        float float28;
+        float float2C;
+        float float30;
+        float float34;
+        float float38;
+        float float3C;
+        float float40;
+        float float44;
+        float float48;
+        float float4C;
+        float float50;
+        float float54;
+        float float58;
+        hh::snd::SoundHandle soundHandle;
         // uint64_t qword60;
         // uint64_t qword68;
         // uint64_t qword70;
         // csl::fnd::IAllocator* allocator1;
-        // uint64_t qword80;
+        // uint64_t ptrTo60;
         // uint64_t qword88;
         // uint64_t qword90;
         // uint64_t qword98;
